@@ -1,0 +1,333 @@
+host: WIN-LBO-19340
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+calcualte_headline_metrics         1
+calculate_capacity                 1
+calculate_carbon_intensity         1
+calculate_costs                    1
+calculate_generation_shares        1
+calculate_trade_flows              1
+create_lp_file                     1
+create_missing_csv                 1
+demand_projection_figures          1
+demand_projections                 1
+emissions                          1
+fuel_limits                        1
+geographic_filter                  1
+otoole_convert                     1
+otoole_results                     1
+powerplant                         1
+powerplant_var_costs               1
+preprocess_data_file               1
+reserves                           1
+solve_lp                           1
+storage                            1
+transmission                       1
+validate_capacity                  3
+validate_emission_intensity        1
+validate_emissions                 2
+validate_generation                3
+visualisation                      1
+total                             33
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Jul  7 12:42:19 2025]
+Job 1: Generating demand figures...
+Reason: Missing output files: results/figs/regression.png, results/figs/projection.png
+
+[Mon Jul  7 12:42:19 2025]
+Job 12: Generating demand data...
+Reason: Missing output files: results/data/SpecifiedAnnualDemand.csv
+
+[Mon Jul  7 12:43:02 2025]
+Finished job 12.
+1 of 33 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:02 2025]
+Job 11: Generating powerplant data...
+Reason: Missing output files: results/data/REGION.csv, results/data/powerplant/OperationalLife.csv, results/data/AvailabilityFactor.csv, results/data/YEAR.csv, results/data/MODE_OF_OPERATION.csv, results/data/powerplant/TotalAnnualMinCapacityInvestment.csv, results/data/TotalAnnualMaxCapacity.csv, results/data/powerplant/OutputActivityRatio.csv, results/data/powerplant/TotalAnnualMaxCapacityInvestment.csv, results/data/powerplant/FixedCost.csv, results/data/powerplant/InputActivityRatio.csv, results/data/powerplant/CapacityToActivityUnit.csv, results/data/powerplant/CapitalCost.csv, results/data/AccumulatedAnnualDemand.csv, results/data/powerplant/FUEL.csv, results/data/powerplant/ResidualCapacity.csv, results/data/TotalAnnualMinCapacity.csv, results/data/powerplant/TECHNOLOGY.csv; Input files updated by another job: results/data/SpecifiedAnnualDemand.csv
+
+[Mon Jul  7 12:43:04 2025]
+Finished job 1.
+2 of 33 steps (6%) done
+[Mon Jul  7 12:43:32 2025]
+Finished job 11.
+3 of 33 steps (9%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Jul  7 12:43:32 2025]
+Job 20: Generating mining fuel limits...
+Reason: Missing output files: results/data/TotalTechnologyAnnualActivityUpperLimit.csv; Input files updated by another job: results/data/REGION.csv, results/data/powerplant/TECHNOLOGY.csv, results/data/YEAR.csv
+
+[Mon Jul  7 12:43:32 2025]
+Job 16: Generating powerplant variable costs...
+Reason: Missing output files: results/data/powerplant/VariableCost.csv; Input files updated by another job: results/data/REGION.csv, results/data/powerplant/TECHNOLOGY.csv, results/data/YEAR.csv
+
+[Mon Jul  7 12:43:32 2025]
+Finished job 20.
+4 of 33 steps (12%) done
+[Mon Jul  7 12:43:32 2025]
+Finished job 16.
+5 of 33 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:32 2025]
+Job 15: Generating transmission data...
+Reason: Missing output files: results/data/transmission/FixedCost.csv, results/data/transmission/TotalAnnualMaxCapacityInvestment.csv, results/data/transmission/TECHNOLOGY.csv, results/data/transmission/VariableCost.csv, results/data/FUEL.csv, results/data/transmission/CapacityToActivityUnit.csv, results/data/transmission/InputActivityRatio.csv, results/data/transmission/CapitalCost.csv, results/data/transmission/TotalAnnualMinCapacityInvestment.csv, results/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/data/transmission/ResidualCapacity.csv, results/data/transmission/OutputActivityRatio.csv, results/data/transmission/OperationalLife.csv; Input files updated by another job: results/data/powerplant/OperationalLife.csv, results/data/AvailabilityFactor.csv, results/data/powerplant/VariableCost.csv, results/data/MODE_OF_OPERATION.csv, results/data/YEAR.csv, results/data/powerplant/TotalAnnualMinCapacityInvestment.csv, results/data/TotalAnnualMaxCapacity.csv, results/data/powerplant/InputActivityRatio.csv, results/data/powerplant/CapacityToActivityUnit.csv, results/data/powerplant/FUEL.csv, results/data/powerplant/ResidualCapacity.csv, results/data/TotalAnnualMinCapacity.csv, results/data/REGION.csv, results/data/powerplant/OutputActivityRatio.csv, results/data/powerplant/TotalAnnualMaxCapacityInvestment.csv, results/data/powerplant/FixedCost.csv, results/data/powerplant/CapitalCost.csv, results/data/AccumulatedAnnualDemand.csv, results/data/powerplant/TECHNOLOGY.csv
+
+[Mon Jul  7 12:43:35 2025]
+Finished job 15.
+6 of 33 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:35 2025]
+Job 14: Generating storage data...
+Reason: Missing output files: results/data/StorageLevelStart.csv, results/data/CapacityToActivityUnit.csv, results/data/CapitalCostStorage.csv, results/data/OutputActivityRatio.csv, results/data/TECHNOLOGY.csv, results/data/STORAGE.csv, results/data/ResidualCapacity.csv, results/data/CapitalCost.csv, results/data/OperationalLifeStorage.csv, results/data/ResidualStorageCapacity.csv, results/data/TotalAnnualMaxCapacityInvestment.csv, results/data/VariableCost.csv, results/data/FixedCost.csv, results/data/InputActivityRatio.csv, results/data/TotalAnnualMinCapacityInvestment.csv, results/data/OperationalLife.csv, results/data/TechnologyToStorage.csv, results/data/TechnologyFromStorage.csv; Input files updated by another job: results/data/transmission/FixedCost.csv, results/data/transmission/TotalAnnualMaxCapacityInvestment.csv, results/data/transmission/TECHNOLOGY.csv, results/data/transmission/VariableCost.csv, results/data/transmission/CapacityToActivityUnit.csv, results/data/transmission/InputActivityRatio.csv, results/data/transmission/CapitalCost.csv, results/data/transmission/TotalAnnualMinCapacityInvestment.csv, results/data/FUEL.csv, results/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/data/transmission/ResidualCapacity.csv, results/data/transmission/OutputActivityRatio.csv, results/data/transmission/OperationalLife.csv
+
+[Mon Jul  7 12:43:37 2025]
+Finished job 14.
+7 of 33 steps (21%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Jul  7 12:43:37 2025]
+Job 19: Generating reserves data...
+Reason: Missing output files: results/data/ReserveMarginTagFuel.csv, results/data/ReserveMarginTagTechnology.csv, results/data/ReserveMargin.csv; Input files updated by another job: results/data/StorageLevelStart.csv, results/data/OutputActivityRatio.csv, results/data/OperationalLifeStorage.csv, results/data/TotalAnnualMaxCapacityInvestment.csv, results/data/VariableCost.csv, results/data/FixedCost.csv, results/data/InputActivityRatio.csv, results/data/CapacityToActivityUnit.csv, results/data/CapitalCostStorage.csv, results/data/ResidualCapacity.csv, results/data/TechnologyFromStorage.csv, results/data/CapitalCost.csv, results/data/ResidualStorageCapacity.csv, results/data/STORAGE.csv, results/data/TotalAnnualMinCapacityInvestment.csv, results/data/OperationalLife.csv, results/data/TechnologyToStorage.csv, results/data/TECHNOLOGY.csv
+
+[Mon Jul  7 12:43:37 2025]
+Job 13: Generating emission data...
+Reason: Missing output files: results/data/AnnualEmissionLimit.csv, results/data/EmissionsPenalty.csv, results/data/EmissionActivityRatio.csv, results/data/EMISSION.csv; Input files updated by another job: results/data/OutputActivityRatio.csv, results/data/InputActivityRatio.csv
+
+[Mon Jul  7 12:43:38 2025]
+Finished job 19.
+8 of 33 steps (24%) done
+[Mon Jul  7 12:43:39 2025]
+Finished job 13.
+9 of 33 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:39 2025]
+Job 17: Creating empty parameter data
+Reason: Missing output files: results/data/ModelPeriodExogenousEmission.csv, results/data/DaysInDayType.csv, results/data/CapacityOfOneTechnologyUnit.csv, results/data/DiscountRateStorage.csv, results/data/RETagFuel.csv, results/data/TotalTechnologyAnnualActivityLowerLimit.csv, results/data/TotalTechnologyModelPeriodActivityLowerLimit.csv, results/data/RETagTechnology.csv, results/data/DepreciationMethod.csv, results/data/MinStorageCharge.csv, results/data/DiscountRate.csv, results/data/REMinProductionTarget.csv, results/data/StorageMaxChargeRate.csv, results/data/ModelPeriodEmissionLimit.csv, results/data/StorageMaxDischargeRate.csv, results/data/TradeRoute.csv, results/data/AnnualExogenousEmission.csv; Input files updated by another job: results/data/AvailabilityFactor.csv, results/data/StorageLevelStart.csv, results/data/OutputActivityRatio.csv, results/data/MODE_OF_OPERATION.csv, results/data/YEAR.csv, results/data/AnnualEmissionLimit.csv, results/data/TotalAnnualMaxCapacity.csv, results/data/EmissionActivityRatio.csv, results/data/ReserveMarginTagTechnology.csv, results/data/TotalAnnualMaxCapacityInvestment.csv, results/data/OperationalLifeStorage.csv, results/data/ReserveMarginTagFuel.csv, results/data/VariableCost.csv, results/data/FixedCost.csv, results/data/InputActivityRatio.csv, results/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/data/TotalAnnualMinCapacity.csv, results/data/REGION.csv, results/data/CapacityToActivityUnit.csv, results/data/TECHNOLOGY.csv, results/data/CapitalCostStorage.csv, results/data/TotalTechnologyAnnualActivityUpperLimit.csv, results/data/ResidualCapacity.csv, results/data/EMISSION.csv, results/data/SpecifiedAnnualDemand.csv, results/data/TechnologyFromStorage.csv, results/data/CapitalCost.csv, results/data/ResidualStorageCapacity.csv, results/data/AccumulatedAnnualDemand.csv, results/data/STORAGE.csv, results/data/FUEL.csv, results/data/ReserveMargin.csv, results/data/TotalAnnualMinCapacityInvestment.csv, results/data/OperationalLife.csv, results/data/TechnologyToStorage.csv, results/data/EmissionsPenalty.csv
+
+[Mon Jul  7 12:43:39 2025]
+Finished job 17.
+10 of 33 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:39 2025]
+Job 10: Applying geographic filter...
+Reason: Missing output files: results/India/data/DiscountRateStorage.csv, results/India/data/CapitalCostStorage.csv, results/India/data/OperationalLife.csv, results/India/data/ModelPeriodEmissionLimit.csv, results/India/data/YearSplit.csv, results/India/data/TotalAnnualMaxCapacity.csv, results/India/data/MinStorageCharge.csv, results/India/data/ReserveMargin.csv, results/India/data/ResidualCapacity.csv, results/India/data/ReserveMarginTagFuel.csv, results/India/data/TotalAnnualMaxCapacityInvestment.csv, results/India/data/CapacityFactor.csv, results/India/data/AvailabilityFactor.csv, results/India/data/OperationalLifeStorage.csv, results/India/data/Conversionls.csv, results/India/data/TotalTechnologyAnnualActivityLowerLimit.csv, results/India/data/DaySplit.csv, results/India/data/TradeRoute.csv, results/India/data/TotalTechnologyModelPeriodActivityLowerLimit.csv, results/India/data/REMinProductionTarget.csv, results/India/data/AnnualEmissionLimit.csv, results/India/data/CapacityToActivityUnit.csv, results/India/data/CapacityOfOneTechnologyUnit.csv, results/India/data/ModelPeriodExogenousEmission.csv, results/India/data/DiscountRate.csv, results/India/data/RETagFuel.csv, results/India/data/StorageLevelStart.csv, results/India/data/TechnologyFromStorage.csv, results/India/data/TotalAnnualMinCapacity.csv, results/India/data/TotalAnnualMinCapacityInvestment.csv, results/India/data/AccumulatedAnnualDemand.csv, results/India/data/VariableCost.csv, results/India/data/FixedCost.csv, results/India/data/ReserveMarginTagTechnology.csv, results/India/data/StorageMaxDischargeRate.csv, results/India/data/EmissionsPenalty.csv, results/India/data/Conversionlh.csv, results/India/data/EmissionActivityRatio.csv, results/India/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/India/data/AnnualExogenousEmission.csv, results/India/data/InputActivityRatio.csv, results/India/data/OutputActivityRatio.csv, results/India/data/ResidualStorageCapacity.csv, results/India/data/TechnologyToStorage.csv, results/India/data/StorageMaxChargeRate.csv, results/India/data/Conversionld.csv, results/India/data/SpecifiedDemandProfile.csv, results/India/data/DepreciationMethod.csv, results/India/data/SpecifiedAnnualDemand.csv, results/India/data/DaysInDayType.csv, results/India/data/CapitalCost.csv, results/India/data/RETagTechnology.csv, results/India/data/TotalTechnologyAnnualActivityUpperLimit.csv; Input files updated by another job: results/data/RETagFuel.csv, results/data/EmissionActivityRatio.csv, results/data/DepreciationMethod.csv, results/data/MinStorageCharge.csv, results/data/TotalAnnualMaxCapacityInvestment.csv, results/data/ReserveMarginTagFuel.csv, results/data/REMinProductionTarget.csv, results/data/StorageMaxChargeRate.csv, results/data/ModelPeriodEmissionLimit.csv, results/data/DaysInDayType.csv, results/data/TotalTechnologyAnnualActivityLowerLimit.csv, results/data/CapacityToActivityUnit.csv, results/data/RETagTechnology.csv, results/data/TotalAnnualMinCapacityInvestment.csv, results/data/OperationalLife.csv, results/data/AvailabilityFactor.csv, results/data/CapacityOfOneTechnologyUnit.csv, results/data/StorageLevelStart.csv, results/data/TotalTechnologyModelPeriodActivityLowerLimit.csv, results/data/OutputActivityRatio.csv, results/data/AnnualEmissionLimit.csv, results/data/ReserveMarginTagTechnology.csv, results/data/TotalAnnualMaxCapacity.csv, results/data/DiscountRate.csv, results/data/OperationalLifeStorage.csv, results/data/VariableCost.csv, results/data/FixedCost.csv, results/data/InputActivityRatio.csv, results/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/data/TotalAnnualMinCapacity.csv, results/data/StorageMaxDischargeRate.csv, results/data/TradeRoute.csv, results/data/ModelPeriodExogenousEmission.csv, results/data/DiscountRateStorage.csv, results/data/CapitalCostStorage.csv, results/data/TotalTechnologyAnnualActivityUpperLimit.csv, results/data/ResidualCapacity.csv, results/data/SpecifiedAnnualDemand.csv, results/data/CapitalCost.csv, results/data/TechnologyFromStorage.csv, results/data/ResidualStorageCapacity.csv, results/data/AccumulatedAnnualDemand.csv, results/data/ReserveMargin.csv, results/data/TechnologyToStorage.csv, results/data/EmissionsPenalty.csv, results/data/AnnualExogenousEmission.csv
+
+[Mon Jul  7 12:43:40 2025]
+Finished job 10.
+11 of 33 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:40 2025]
+Job 8: Creating data file...
+Reason: Missing output files: results/India/India.txt; Input files updated by another job: results/India/data/DiscountRateStorage.csv, results/India/data/CapitalCostStorage.csv, results/India/data/OperationalLife.csv, results/India/data/ModelPeriodEmissionLimit.csv, results/India/data/YearSplit.csv, results/India/data/TotalAnnualMaxCapacity.csv, results/India/data/MinStorageCharge.csv, results/India/data/ReserveMargin.csv, results/India/data/ResidualCapacity.csv, results/India/data/ReserveMarginTagFuel.csv, results/India/data/TotalAnnualMaxCapacityInvestment.csv, results/India/data/CapacityFactor.csv, results/India/data/AvailabilityFactor.csv, results/India/data/OperationalLifeStorage.csv, results/India/data/Conversionls.csv, results/India/data/TotalTechnologyAnnualActivityLowerLimit.csv, results/India/data/DaySplit.csv, results/India/data/TradeRoute.csv, results/India/data/TotalTechnologyModelPeriodActivityLowerLimit.csv, results/India/data/REMinProductionTarget.csv, results/India/data/AnnualEmissionLimit.csv, results/India/data/CapacityToActivityUnit.csv, results/India/data/CapacityOfOneTechnologyUnit.csv, results/India/data/ModelPeriodExogenousEmission.csv, results/India/data/DiscountRate.csv, results/India/data/RETagFuel.csv, results/India/data/StorageLevelStart.csv, results/India/data/TechnologyFromStorage.csv, results/India/data/TotalAnnualMinCapacity.csv, results/India/data/TotalAnnualMinCapacityInvestment.csv, results/India/data/AccumulatedAnnualDemand.csv, results/India/data/VariableCost.csv, results/India/data/FixedCost.csv, results/India/data/ReserveMarginTagTechnology.csv, results/India/data/StorageMaxDischargeRate.csv, results/India/data/EmissionsPenalty.csv, results/India/data/Conversionlh.csv, results/India/data/EmissionActivityRatio.csv, results/India/data/TotalTechnologyModelPeriodActivityUpperLimit.csv, results/India/data/AnnualExogenousEmission.csv, results/India/data/InputActivityRatio.csv, results/India/data/OutputActivityRatio.csv, results/India/data/ResidualStorageCapacity.csv, results/India/data/TechnologyToStorage.csv, results/India/data/StorageMaxChargeRate.csv, results/India/data/Conversionld.csv, results/India/data/SpecifiedDemandProfile.csv, results/India/data/DepreciationMethod.csv, results/India/data/SpecifiedAnnualDemand.csv, results/India/data/DaysInDayType.csv, results/India/data/CapitalCost.csv, results/India/data/RETagTechnology.csv, results/India/data/TotalTechnologyAnnualActivityUpperLimit.csv
+
+[Mon Jul  7 12:43:41 2025]
+Finished job 8.
+12 of 33 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:41 2025]
+Job 7: Preprocessing data file...
+Reason: Missing output files: results/India/PreProcessed_India.txt; Input files updated by another job: results/India/India.txt
+
+[Mon Jul  7 12:43:41 2025]
+Finished job 7.
+13 of 33 steps (39%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:41 2025]
+Job 6: Creating lp file...
+Reason: Missing output files: results/India/India.lp; Input files updated by another job: results/India/PreProcessed_India.txt
+
+[Mon Jul  7 12:43:53 2025]
+Finished job 6.
+14 of 33 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:53 2025]
+Job 5: Solving model via cbc...
+Reason: Missing output files: results/India/India.sol; Input files updated by another job: results/India/India.lp
+
+[Mon Jul  7 12:43:55 2025]
+Finished job 5.
+15 of 33 steps (45%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:55 2025]
+Job 4: Generating result csv files...
+Reason: Missing output files: results/India/results/DiscountedCapitalInvestment.csv, results/India/results/TotalAnnualTechnologyActivityByMode.csv, results/India/results/CapitalInvestment.csv, results/India/results/TotalTechnologyAnnualActivity.csv, results/India/results/AccumulatedNewCapacity.csv, results/India/results/TotalTechnologyModelPeriodActivity.csv, results/India/results/TotalDiscountedCost.csv, results/India/results/NewCapacity.csv, results/India/results/UseByTechnology.csv, results/India/results/DiscountedTechnologyEmissionsPenalty.csv, results/India/results/Demand.csv, results/India/results/AnnualEmissions.csv, results/India/results/DiscountedCostByTechnology.csv, results/India/results/AnnualTechnologyEmissionByMode.csv, results/India/results/RateOfProductionByTechnology.csv, results/India/results/AnnualTechnologyEmission.csv, results/India/results/RateOfUseByTechnology.csv, results/India/results/TotalCapacityAnnual.csv, results/India/results/OperatingCost.csv, results/India/results/RateOfActivity.csv, results/India/results/DiscountedSalvageValue.csv, results/India/results/ProductionByTechnology.csv, results/India/results/RateOfUseByTechnologyByMode.csv, results/India/results/RateOfProductionByTechnologyByMode.csv, results/India/results/ProductionByTechnologyAnnual.csv, results/India/results/AnnualFixedOperatingCost.csv, results/India/results/DiscountedOperationalCost.csv, results/India/results/AnnualVariableOperatingCost.csv, results/India/results/SalvageValue.csv; Input files updated by another job: results/India/India.sol
+
+[Mon Jul  7 12:43:57 2025]
+Finished job 4.
+16 of 33 steps (48%) done
+Select jobs to execute...
+Execute 10 jobs...
+
+[Mon Jul  7 12:43:57 2025]
+Job 29: Validating capacity against eia
+Reason: Missing output files: results/India/validation/IND/capacity/eia.png; Input files updated by another job: results/India/results/TotalCapacityAnnual.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 33: Validating emissions against ember
+Reason: Missing output files: results/India/validation/IND/emissions/ember.png; Input files updated by another job: results/India/results/AnnualEmissions.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 34: Validating emissions against climatewatch
+Reason: Missing output files: results/India/validation/IND/emissions/climatewatch.png; Input files updated by another job: results/India/results/AnnualEmissions.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 25: Calculating Headline Metrics...
+Reason: Missing output files: results/India/result_summaries/Metrics.csv; Input files updated by another job: results/India/results/ProductionByTechnologyAnnual.csv, results/India/results/AnnualEmissions.csv, results/India/results/Demand.csv, results/India/results/TotalDiscountedCost.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 27: Validating capacity against ember
+Reason: Missing output files: results/India/validation/IND/capacity/ember.png; Input files updated by another job: results/India/results/TotalCapacityAnnual.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 26: Generating result figures...
+Reason: Missing output files: results/India/figures/TotalCapacityAnnual.html, results/India/figures/GenerationAnnual.html; Input files updated by another job: results/India/results/DiscountedCapitalInvestment.csv, results/India/results/TotalAnnualTechnologyActivityByMode.csv, results/India/results/TotalCapacityAnnual.csv, results/India/results/RateOfActivity.csv, results/India/results/CapitalInvestment.csv, results/India/results/TotalTechnologyAnnualActivity.csv, results/India/results/AccumulatedNewCapacity.csv, results/India/results/TotalTechnologyModelPeriodActivity.csv, results/India/results/DiscountedSalvageValue.csv, results/India/results/ProductionByTechnology.csv, results/India/results/TotalDiscountedCost.csv, results/India/results/RateOfUseByTechnologyByMode.csv, results/India/results/RateOfProductionByTechnologyByMode.csv, results/India/results/NewCapacity.csv, results/India/results/DiscountedTechnologyEmissionsPenalty.csv, results/India/results/UseByTechnology.csv, results/India/results/ProductionByTechnologyAnnual.csv, results/India/results/AnnualFixedOperatingCost.csv, results/India/results/Demand.csv, results/India/results/AnnualEmissions.csv, results/India/results/DiscountedCostByTechnology.csv, results/India/results/AnnualTechnologyEmissionByMode.csv, results/India/results/RateOfProductionByTechnology.csv, results/India/results/DiscountedOperationalCost.csv, results/India/results/AnnualTechnologyEmission.csv, results/India/results/RateOfUseByTechnology.csv, results/India/results/AnnualVariableOperatingCost.csv, results/India/results/OperatingCost.csv, results/India/results/SalvageValue.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 3: Calculating Trade Flows...
+Reason: Missing output files: results/India/result_summaries/TradeFlowsCountry.csv, results/India/result_summaries/AnnualExportTradeFlowsCountry.csv, results/India/result_summaries/AnnualImportTradeFlowsCountry.csv, results/India/result_summaries/AnnualNetTradeFlowsCountry.csv, results/India/result_summaries/AnnualImportTradeFlowsNode.csv, results/India/result_summaries/AnnualExportTradeFlowsNode.csv, results/India/result_summaries/AnnualNetTradeFlowsNode.csv, results/India/result_summaries/TradeFlowsNode.csv, results/India/result_summaries/AnnualTotalTradeFlowsNode.csv, results/India/result_summaries/AnnualTotalTradeFlowsCountry.csv; Input files updated by another job: results/India/results/TotalAnnualTechnologyActivityByMode.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 28: Validating capacity against irena
+Reason: Missing output files: results/India/validation/IND/capacity/irena.png; Input files updated by another job: results/India/results/TotalCapacityAnnual.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 22: Calculating Capacities...
+Reason: Missing output files: results/India/result_summaries/PowerCapacityNode.csv, results/India/result_summaries/TransmissionCapacityCountry.csv, results/India/result_summaries/PowerCapacityCountry.csv, results/India/result_summaries/TransmissionCapacityNode.csv; Input files updated by another job: results/India/results/TotalCapacityAnnual.csv
+
+[Mon Jul  7 12:43:57 2025]
+Job 31: Validating generation against irena
+Reason: Missing output files: results/India/validation/IND/generation/irena.png; Input files updated by another job: results/India/results/ProductionByTechnologyAnnual.csv
+
+[Mon Jul  7 12:43:57 2025]
+Finished job 25.
+17 of 33 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:57 2025]
+Job 24: Calculating Costs...
+Reason: Missing output files: results/India/result_summaries/PowerCostNode.csv, results/India/result_summaries/PowerCostGlobal.csv, results/India/result_summaries/TotalCostCountry.csv, results/India/result_summaries/TotalCostNode.csv, results/India/result_summaries/TotalCostGlobal.csv, results/India/result_summaries/PowerCostCountry.csv; Input files updated by another job: results/India/results/DiscountedCostByTechnology.csv, results/India/results/Demand.csv
+
+[Mon Jul  7 12:43:57 2025]
+Finished job 22.
+18 of 33 steps (55%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:58 2025]
+Job 23: Calculating Generaion Fuel Shares...
+Reason: Missing output files: results/India/result_summaries/GenerationSharesGlobal.csv, results/India/result_summaries/GenerationSharesCountry.csv, results/India/result_summaries/GenerationSharesNode.csv; Input files updated by another job: results/India/results/ProductionByTechnology.csv
+
+[Mon Jul  7 12:43:58 2025]
+Finished job 3.
+19 of 33 steps (58%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:58 2025]
+Job 30: Validating generation against ember
+Reason: Missing output files: results/India/validation/IND/generation/ember.png; Input files updated by another job: results/India/results/ProductionByTechnologyAnnual.csv
+
+[Mon Jul  7 12:43:58 2025]
+Finished job 24.
+20 of 33 steps (61%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:58 2025]
+Job 32: Validating generation against eia
+Reason: Missing output files: results/India/validation/IND/generation/eia.png; Input files updated by another job: results/India/results/ProductionByTechnologyAnnual.csv
+
+[Mon Jul  7 12:43:59 2025]
+Finished job 23.
+21 of 33 steps (64%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:59 2025]
+Job 21: Calculating Carbon Intensity...
+Reason: Missing output files: results/India/result_summaries/AnnualEmissionIntensityGlobal.csv, results/India/result_summaries/AnnualEmissionIntensity.csv; Input files updated by another job: results/India/results/ProductionByTechnology.csv, results/India/results/AnnualEmissions.csv
+
+[Mon Jul  7 12:43:59 2025]
+Finished job 34.
+22 of 33 steps (67%) done
+[Mon Jul  7 12:43:59 2025]
+Finished job 31.
+23 of 33 steps (70%) done
+[Mon Jul  7 12:43:59 2025]
+Finished job 28.
+24 of 33 steps (73%) done
+[Mon Jul  7 12:43:59 2025]
+Finished job 21.
+25 of 33 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:43:59 2025]
+Job 35: Validating emission intensity against ember
+Reason: Missing output files: results/India/validation/IND/emission_intensity/ember.png; Input files updated by another job: results/India/result_summaries/AnnualEmissionIntensity.csv
+
+[Mon Jul  7 12:43:59 2025]
+Finished job 29.
+26 of 33 steps (79%) done
+[Mon Jul  7 12:44:00 2025]
+Finished job 33.
+27 of 33 steps (82%) done
+[Mon Jul  7 12:44:00 2025]
+Finished job 27.
+28 of 33 steps (85%) done
+[Mon Jul  7 12:44:01 2025]
+Finished job 32.
+29 of 33 steps (88%) done
+[Mon Jul  7 12:44:01 2025]
+Finished job 30.
+30 of 33 steps (91%) done
+[Mon Jul  7 12:44:01 2025]
+Finished job 35.
+31 of 33 steps (94%) done
+[Mon Jul  7 12:44:09 2025]
+Finished job 26.
+32 of 33 steps (97%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul  7 12:44:09 2025]
+Job 0: Running workflow...
+Reason: Input files updated by another job: results/India/result_summaries/PowerCostNode.csv, results/India/result_summaries/TransmissionCapacityCountry.csv, results/figs/projection.png, results/India/result_summaries/TransmissionCapacityNode.csv, results/India/result_summaries/GenerationSharesCountry.csv, results/India/validation/IND/emission_intensity/ember.png, results/India/result_summaries/AnnualTotalTradeFlowsNode.csv, results/India/result_summaries/AnnualTotalTradeFlowsCountry.csv, results/India/validation/IND/capacity/irena.png, results/India/result_summaries/TradeFlowsCountry.csv, results/India/result_summaries/PowerCapacityCountry.csv, results/India/result_summaries/TotalCostCountry.csv, results/India/result_summaries/TotalCostNode.csv, results/India/result_summaries/TotalCostGlobal.csv, results/India/figures/GenerationAnnual.html, results/India/result_summaries/PowerCapacityNode.csv, results/India/result_summaries/AnnualExportTradeFlowsNode.csv, results/India/result_summaries/PowerCostCountry.csv, results/India/figures/TotalCapacityAnnual.html, results/India/validation/IND/capacity/eia.png, results/India/result_summaries/GenerationSharesGlobal.csv, results/India/validation/IND/generation/ember.png, results/India/result_summaries/AnnualExportTradeFlowsCountry.csv, results/India/result_summaries/Metrics.csv, results/India/result_summaries/GenerationSharesNode.csv, results/India/result_summaries/AnnualEmissionIntensityGlobal.csv, results/India/result_summaries/AnnualNetTradeFlowsCountry.csv, results/India/result_summaries/AnnualImportTradeFlowsNode.csv, results/India/result_summaries/AnnualImportTradeFlowsCountry.csv, results/India/validation/IND/emissions/climatewatch.png, results/India/result_summaries/AnnualNetTradeFlowsNode.csv, results/India/validation/IND/generation/eia.png, results/figs/regression.png, results/India/result_summaries/TradeFlowsNode.csv, results/India/result_summaries/PowerCostGlobal.csv, results/India/validation/IND/capacity/ember.png, results/India/validation/IND/emissions/ember.png, results/India/validation/IND/generation/irena.png, results/India/result_summaries/AnnualEmissionIntensity.csv
+
+[Mon Jul  7 12:44:09 2025]
+Finished job 0.
+33 of 33 steps (100%) done
+Complete log: .snakemake/log/2025-07-07T124219.378319.snakemake.log
