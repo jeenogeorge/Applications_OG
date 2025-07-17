@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kentza"
+scenario: "kentzaNoTrade"
 
 # Temporal Parameters 
 startYear: 2021
@@ -24,15 +24,15 @@ geographic_scope:
   - "TZA"
 
 # Set to True if transmission should be included
-crossborderTrade: True
+crossborderTrade: False
 
 # Set to True if existing transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
-transmission_existing: True
+transmission_existing: False
 
 # Set to True if planned transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
-transmission_planned: True
+transmission_planned: False
 
 # Set to True if existing storage capacities should be included
 # from the Global Energy Storage Database (DOE/Sandia).
