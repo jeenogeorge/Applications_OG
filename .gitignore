@@ -1,6 +1,5 @@
 # Project Specific 
 .snakemake
-results/*
 config/config.yaml
 resources/data/*
 
