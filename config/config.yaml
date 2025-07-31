@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kentzaEmissionTagets"
+scenario: "kentzaForcedSolar"
 
 # Temporal Parameters 
 startYear: 2021
@@ -242,9 +242,9 @@ re_targets:
   #T02a: ["TZAXX", ['CCG'], "ABS", 2026, 2030, 1]
   #T02b: ["TZAXX", ['CCG'], "ABS", 2031, 2035, 2]
   #T02c: ["TZAXX", ['CCG'], "ABS", 2036, 2040, 2]
-  #T03: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 10]
-  #T04: ["TZAXX", ['SPV'], "PCT", 2031, 2050, 15]
-  #T05: ["TZAXX", ['SPV'], "PCT", 2036, 2050, 20]
-  #T06: ["KENXX", ['SPV'], "PCT", 2026, 2050, 10]
-  #T07: ["KENXX", ['SPV'], "PCT", 2031, 2050, 15]
-  #T08: ["KENXX", ['SPV'], "PCT", 2036, 2050, 20]
+  T03: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 10]
+  T04: ["TZAXX", ['SPV'], "PCT", 2031, 2050, 15]
+  T05: ["TZAXX", ['SPV'], "PCT", 2036, 2050, 20]
+  T06: ["KENXX", ['SPV'], "PCT", 2026, 2050, 10]
+  T07: ["KENXX", ['SPV'], "PCT", 2031, 2050, 15]
+  T08: ["KENXX", ['SPV'], "PCT", 2036, 2050, 20]
