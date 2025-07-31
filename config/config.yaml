@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kentza"
+scenario: "kentzaEmissionTagets"
 
 # Temporal Parameters 
 startYear: 2021
@@ -7,9 +7,12 @@ endYear: 2050
 daytype: False
 dayparts:
 # daypart : [start_hour (inclusive), end_hour (exclusive)]
-  D1: [1, 9]
-  D2: [9, 17]
-  D3: [17, 25]
+  D1: [1, 5]
+  D2: [5, 9]
+  D3: [9, 13]
+  D4: [13, 17]
+  D5: [17, 21]
+  D6: [21, 25]
 seasons:
 # season : [month 1, month 2, ...] (all inclusive)
   S1: [1, 2, 3, 4]
@@ -136,7 +139,8 @@ storage_parameters:
 # EXAMPLE:  SDS: [1938, 44.25, 0, 85, 4] 
 # Units are in m$/GW (capex_cost, annual_fixed_O&M_cost), $/MWh (variable_O&M_cost),
 # % (roundtrip_efficiency), hours (duration = storage capacity (GWh)/Power rating (GW)).
-
+  SDS: [1938, 44.25, 0, 85, 4] 
+  LDS: [3794, 20.2, 0.58, 80, 10]
 nodes_to_add:
 # - "AAAXX" where AAA is a 3-letter country code, 
 # specified in the "geographic scope" 
@@ -153,7 +157,7 @@ reserve_margin:
 # RESERVE_MARGIN: [PERCENTAGE, START_YEAR, END_YEAR]
 # Years for which there is no PERCENTAGE value will be interpolated
 # EXAMPLE:  RM1: [10, 2025, 2050]
-
+  RM1: [15, 2021, 2050]
 reserve_margin_technologies:
 # TECHNOLOGY: PERCENTAGE,
 # Specify the share of capacity (%) per technology that can contribute to the
@@ -176,6 +180,8 @@ reserve_margin_technologies:
   WAV : 10
   WOF : 10
   WON : 10
+  LDS : 70
+  SDS : 70
 
 emission_limit:
 # - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
@@ -186,6 +192,7 @@ emission_limit:
 # previous target years. A combination of TYPE targets can be set per EMISSION and
 # COUNTRY yet only a single target per YEAR.
 # EXAMPLE: - ["CO2", "IND", "LINEAR", 2050, 0]
+ - ["CO2", "KEN", "LINEAR", 2030, 0]
 
 min_generation_factors:
 # TECHNOLOGY: [VALUE, COUNTRY, YEAR]
@@ -229,3 +236,15 @@ re_targets:
 # EXAMPLE:  T02: ["IND", [], "PCT", 2030, 2040, 60]
 # EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
 # EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
+  T01: ["KEN", [], "PCT", 2035, 2050, 90]
+  T02: ["TZA", [], "PCT", 2030, 2050, 50]
+  #T02: ["TZA", ['SPV'], "PCT", 2021, 2050, 20]
+  #T02a: ["TZAXX", ['CCG'], "ABS", 2026, 2030, 1]
+  #T02b: ["TZAXX", ['CCG'], "ABS", 2031, 2035, 2]
+  #T02c: ["TZAXX", ['CCG'], "ABS", 2036, 2040, 2]
+  #T03: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 10]
+  #T04: ["TZAXX", ['SPV'], "PCT", 2031, 2050, 15]
+  #T05: ["TZAXX", ['SPV'], "PCT", 2036, 2050, 20]
+  #T06: ["KENXX", ['SPV'], "PCT", 2026, 2050, 10]
+  #T07: ["KENXX", ['SPV'], "PCT", 2031, 2050, 15]
+  #T08: ["KENXX", ['SPV'], "PCT", 2036, 2050, 20]
