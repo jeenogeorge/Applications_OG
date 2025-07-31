@@ -7,9 +7,12 @@ endYear: 2050
 daytype: False
 dayparts:
 # daypart : [start_hour (inclusive), end_hour (exclusive)]
-  D1: [1, 9]
-  D2: [9, 17]
-  D3: [17, 25]
+  D1: [1, 5]
+  D2: [5, 9]
+  D3: [9, 13]
+  D4: [13, 17]
+  D5: [17, 21]
+  D6: [21, 25]
 seasons:
 # season : [month 1, month 2, ...] (all inclusive)
   S1: [1, 2, 3, 4]
