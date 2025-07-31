@@ -16,7 +16,7 @@ seasons:
   S2: [5, 6, 7, 8]
   S3: [9, 10, 11, 12]
 
-timeshift: 0 # value between -11 and 12
+timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
@@ -53,20 +53,13 @@ emission_penalty:
 # - [EMISSION, COUNTRY, START_YEAR, END_YEAR, VALUE]
 # EXAMPLE:  - ["CO2", "IND", 2020, 2050, 2.1]
 # where VALUE is in M$/MT CO2
- - ["CO2", "KEN", 2021, 2050, 50]
- - ["CO2", "TZA", 2021, 2050, 50]
 
 # Investment Parameters 
 no_invest_technologies: 
-  - "CSP"
-  - "WAV"
-  - "URN"
   - "OTH"
-  - "WAS"
   - "COG" 
-  - "GEO"
-  - "BIO"
   - "PET"
+  - "COA"
 
 # Result Parameters 
 results_by_country: True
@@ -100,6 +93,7 @@ user_defined_capacity_transmission:
 # Per technology, only the capacity, build_year, first_year_of_expansion, 
 # final_year_of_expansion and build_rate_per_year parameters can deviate
 # from each other. For all other parameters only the last entry will be used.
+  trn1: [TRNTZAXXKENXX, 2, 2024, 2050, 2050, 0, 350, 13, 4, 95]
 
 user_defined_capacity_storage:
 # entry: [technology, 
