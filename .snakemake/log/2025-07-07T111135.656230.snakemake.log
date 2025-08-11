@@ -1,0 +1,101 @@
+host: WIN-LBO-19340
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+calcualte_headline_metrics         1
+calculate_capacity                 1
+calculate_carbon_intensity         1
+calculate_costs                    1
+calculate_generation_shares        1
+calculate_trade_flows              1
+copy_otoole_confg                  1
+create_lp_file                     1
+create_missing_csv                 1
+demand_projection_figures          1
+demand_projections                 1
+download_external_files            1
+emissions                          1
+fuel_limits                        1
+geographic_filter                  1
+otoole_convert                     1
+otoole_results                     1
+powerplant                         1
+powerplant_var_costs               1
+preprocess_data_file               1
+reserves                           1
+solve_lp                           1
+storage                            1
+timeslice                          1
+transmission                       1
+validate_capacity                  3
+validate_emission_intensity        1
+validate_emissions                 2
+validate_generation                3
+visualisation                      1
+total                             36
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Jul  7 11:11:35 2025]
+Job 2: Downloading external files...
+Reason: Missing output files: resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx, resources/data/default/GTD_planned.csv, resources/data/default/GTD_existing.csv, resources/data/default/All_Demand_UTC_2015.csv, resources/data/default/ember_yearly_electricity_data.csv, resources/data/default/CMO-October-2024-Forecasts.xlsx, resources/data/default/PLEXOS_World_MESSAGEix_GLOBIOM_Softlink.xlsx
+
+[Mon Jul  7 11:11:35 2025]
+Job 9: Copying otoole configuration file...
+Reason: Missing output files: results/India/otoole.yaml
+
+[Mon Jul  7 11:11:37 2025]
+Finished job 9.
+1 of 36 steps (3%) done
+[Mon Jul  7 11:12:28 2025]
+Finished job 2.
+2 of 36 steps (6%) done
+Select jobs to execute...
+Execute 3 jobs...
+
+[Mon Jul  7 11:12:28 2025]
+Job 12: Generating demand data...
+Reason: Missing output files: results/data/SpecifiedAnnualDemand.csv; Input files updated by another job: resources/data/default/ember_yearly_electricity_data.csv, resources/data/default/All_Demand_UTC_2015.csv, resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx
+
+[Mon Jul  7 11:12:28 2025]
+Job 18: Generating timeslice data...
+Reason: Missing output files: results/data/Conversionlh.csv, results/data/TIMESLICE.csv, results/data/Conversionls.csv, results/data/Conversionld.csv, results/data/CapacityFactor.csv, results/data/DAYTYPE.csv, results/data/YearSplit.csv, results/data/DaySplit.csv, results/data/SpecifiedDemandProfile.csv, results/data/SEASON.csv, results/data/DAILYTIMEBRACKET.csv; Input files updated by another job: resources/data/default/All_Demand_UTC_2015.csv
+
+[Mon Jul  7 11:12:28 2025]
+Job 1: Generating demand figures...
+Reason: Missing output files: results/figs/projection.png, results/figs/regression.png; Input files updated by another job: resources/data/default/ember_yearly_electricity_data.csv, resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx
+
+[Mon Jul  7 11:12:36 2025]
+Finished job 18.
+3 of 36 steps (8%) done
+RuleException:
+CalledProcessError in file /home/gyjg2/repos/Applications_OG/workflow/rules/preprocess.smk, line 356:
+Command 'set -euo pipefail;  /home/gyjg2/miniforge3/envs/osemosys-global/bin/python3.11 /home/gyjg2/repos/Applications_OG/.snakemake/scripts/tmp7xsi4quv.figures.py' returned non-zero exit status 1.
+[Mon Jul  7 11:12:37 2025]
+Error in rule demand_projection_figures:
+    jobid: 1
+    input: resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx, resources/data/default/iamc_db_GDPppp_Countries.xlsx, resources/data/default/iamc_db_POP_Countries.xlsx, resources/data/default/iamc_db_URB_Countries.xlsx, resources/data/default/iamc_db_POP_GDPppp_URB_Countries_Missing.xlsx, resources/data/default/ember_yearly_electricity_data.csv
+    output: results/figs/regression.png, results/figs/projection.png
+    log: results/logs/demand_projection_plot.log (check log file(s) for error details)
+
+RuleException:
+CalledProcessError in file /home/gyjg2/repos/Applications_OG/workflow/rules/preprocess.smk, line 151:
+Command 'set -euo pipefail;  /home/gyjg2/miniforge3/envs/osemosys-global/bin/python3.11 /home/gyjg2/repos/Applications_OG/.snakemake/scripts/tmpwj296h_x.main.py' returned non-zero exit status 1.
+[Mon Jul  7 11:12:38 2025]
+Error in rule demand_projections:
+    jobid: 12
+    input: resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx, resources/data/default/All_Demand_UTC_2015.csv, resources/data/default/iamc_db_GDPppp_Countries.xlsx, resources/data/default/iamc_db_POP_Countries.xlsx, resources/data/default/iamc_db_URB_Countries.xlsx, resources/data/default/iamc_db_POP_GDPppp_URB_Countries_Missing.xlsx, resources/data/default/T&D Losses.xlsx, resources/data/default/ember_yearly_electricity_data.csv, resources/data/custom/specified_annual_demand.csv
+    output: results/data/SpecifiedAnnualDemand.csv
+    log: results/logs/demand_projections.log (check log file(s) for error details)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-07T111135.656230.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

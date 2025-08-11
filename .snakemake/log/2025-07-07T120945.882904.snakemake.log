@@ -1,0 +1,74 @@
+host: WIN-LBO-19340
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+calcualte_headline_metrics         1
+calculate_capacity                 1
+calculate_carbon_intensity         1
+calculate_costs                    1
+calculate_generation_shares        1
+calculate_trade_flows              1
+create_lp_file                     1
+create_missing_csv                 1
+demand_projection_figures          1
+demand_projections                 1
+emissions                          1
+fuel_limits                        1
+geographic_filter                  1
+otoole_convert                     1
+otoole_results                     1
+powerplant                         1
+powerplant_var_costs               1
+preprocess_data_file               1
+reserves                           1
+solve_lp                           1
+storage                            1
+transmission                       1
+validate_capacity                  3
+validate_emission_intensity        1
+validate_emissions                 2
+validate_generation                3
+visualisation                      1
+total                             33
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Jul  7 12:09:46 2025]
+Job 1: Generating demand figures...
+Reason: Missing output files: results/figs/regression.png, results/figs/projection.png
+
+[Mon Jul  7 12:09:46 2025]
+Job 12: Generating demand data...
+Reason: Missing output files: results/data/SpecifiedAnnualDemand.csv
+
+RuleException:
+CalledProcessError in file /home/gyjg2/repos/Applications_OG/workflow/rules/preprocess.smk, line 356:
+Command 'set -euo pipefail;  /home/gyjg2/miniforge3/envs/osemosys-global/bin/python3.11 /home/gyjg2/repos/Applications_OG/.snakemake/scripts/tmpurg9ajge.figures.py' returned non-zero exit status 1.
+[Mon Jul  7 12:09:51 2025]
+Error in rule demand_projection_figures:
+    jobid: 1
+    input: resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx, resources/data/default/iamc_db_GDPppp_Countries.xlsx, resources/data/default/iamc_db_POP_Countries.xlsx, resources/data/default/iamc_db_URB_Countries.xlsx, resources/data/default/iamc_db_POP_GDPppp_URB_Countries_Missing.xlsx, resources/data/default/ember_yearly_electricity_data.csv
+    output: results/figs/regression.png, results/figs/projection.png
+    log: results/logs/demand_projection_plot.log (check log file(s) for error details)
+
+RuleException:
+CalledProcessError in file /home/gyjg2/repos/Applications_OG/workflow/rules/preprocess.smk, line 151:
+Command 'set -euo pipefail;  /home/gyjg2/miniforge3/envs/osemosys-global/bin/python3.11 /home/gyjg2/repos/Applications_OG/.snakemake/scripts/tmpg3ld7dfr.main.py' returned non-zero exit status 1.
+[Mon Jul  7 12:09:51 2025]
+Error in rule demand_projections:
+    jobid: 12
+    input: resources/data/default/PLEXOS_World_2015_Gold_V1.1.xlsx, resources/data/default/All_Demand_UTC_2015.csv, resources/data/default/iamc_db_GDPppp_Countries.xlsx, resources/data/default/iamc_db_POP_Countries.xlsx, resources/data/default/iamc_db_URB_Countries.xlsx, resources/data/default/iamc_db_POP_GDPppp_URB_Countries_Missing.xlsx, resources/data/default/T&D Losses.xlsx, resources/data/default/ember_yearly_electricity_data.csv, resources/data/custom/specified_annual_demand.csv
+    output: results/data/SpecifiedAnnualDemand.csv
+    log: results/logs/demand_projections.log (check log file(s) for error details)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-07T120945.882904.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
