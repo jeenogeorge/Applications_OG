@@ -68,6 +68,8 @@ no_invest_technologies:
   - "OIL"
   - "URN"
   - "WOF"
+  - "CCG"
+  - "WAV"
 
 # Result Parameters 
 results_by_country: True
