@@ -109,9 +109,9 @@ user_defined_capacity_transmission:
 # Per technology, only the capacity, build_year, first_year_of_expansion, 
 # final_year_of_expansion and build_rate_per_year parameters can deviate
 # from each other. For all other parameters only the last entry will be used.
-  trn1: [TRNTZAXXKENXX, 2, 2025, 2050, 2050, 0, 0, 13, 4, 95]
-  trn2: [TRNKENXXTZAXX, 2, 2025, 2050, 2050, 0, 0, 13, 4, 95]
-  trn3: [TRNETHXXKENXX, .2, 2010, 2050, 2050, 0, 0, 13, 4, 95]
+  trn1: [TRNTZAXXKENXX, 2, 2025, 2026, 2050, 1, 350, 13, 4, 95]
+  trn2: [TRNKENXXTZAXX, 2, 2025, 2026, 2050, 1, 350, 13, 4, 95]
+  trn3: [TRNETHXXKENXX, .2, 2010, 2026, 2050, 1, 350, 13, 4, 95]
 
 user_defined_capacity_storage:
 # entry: [technology, 
