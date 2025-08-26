@@ -134,9 +134,11 @@ user_defined_capacity_storage:
   sto1: [PWRLDSKENXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto2: [PWRLDSETHXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto3: [PWRLDSTZAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
-  sto4: [PWRSDSKENXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
-  sto5: [PWRSDSETHXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
-  sto6: [PWRSDSTZAXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
+  sto5: [PWRSDSKENXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto6: [PWRSDSETHXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto7: [PWRSDSTZAXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto8: [PWRSDSUGAXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
 
 transmission_parameters:
 # technology_group: [Line CAPEX, 
