@@ -26,6 +26,7 @@ geographic_scope:
   - "KEN"
   - "TZA"
   - "ETH"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
