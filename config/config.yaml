@@ -113,6 +113,9 @@ user_defined_capacity_transmission:
   trn1: [TRNTZAXXKENXX, 2, 2025, 2026, 2050, 1, 350, 13, 4, 95]
   trn2: [TRNKENXXTZAXX, 2, 2025, 2026, 2050, 1, 350, 13, 4, 95]
   trn3: [TRNETHXXKENXX, .2, 2010, 2026, 2050, 1, 350, 13, 4, 95]
+  trn4: [TRNKENXXETHXX, .2, 2010, 2026, 2050, 1, 350, 13, 4, 95]
+  trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
+  trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
 
 user_defined_capacity_storage:
 # entry: [technology, 
