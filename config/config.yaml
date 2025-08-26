@@ -1,5 +1,7 @@
 # Scenario Name 
 scenario: "KTEHighDemand"
+# for KTEHighDemandNointerconnection, make crossborderTrade: False crossborderTrade: False and comment out 
+# any user_defined_capacity_transmission: after 2025
 
 # Temporal Parameters 
 startYear: 2021
@@ -38,6 +40,7 @@ transmission_existing: True
 # Set to True if planned transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
 transmission_planned: True
+
 
 # Set to True if existing storage capacities should be included
 # from the Global Energy Storage Database (DOE/Sandia).
@@ -135,12 +138,12 @@ user_defined_capacity_storage:
 # m$/GW (capex_cost/annual_fixed_O&M_cost), 
 # $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
   sto1: [PWRLDSKENXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
-  sto2: [PWRLDSETHXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
-  sto3: [PWRLDSTZAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
+  sto2: [PWRLDSETHXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
+  sto3: [PWRLDSTZAXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
   sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto5: [PWRSDSKENXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
-  sto6: [PWRSDSETHXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
-  sto7: [PWRSDSTZAXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto6: [PWRSDSETHXX01, .1, 2026, 2026, 1.5, 1938, 44.25, 0, 85]
+  sto7: [PWRSDSTZAXX01, .1, 2026, 2026, 1.2, 1938, 44.25, 0, 85]
   sto8: [PWRSDSUGAXX01, .3, 2026, 2026, 1, 1938, 44.25, 0, 85]
 
 transmission_parameters:
