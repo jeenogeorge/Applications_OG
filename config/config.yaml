@@ -257,10 +257,14 @@ min_generation_factors:
   HYD: [48, "ETH", 2020]
   SPV: [16, "ETH", 2020]
   BIO: [0.08, "ETH", 2020]
-  OIL: [0.5, "UGA", 2022]
-  HYD: [18, "UGA", 2022]
-  BIO: [2, "UGA", 2022]
-  SPV: [0.5, "UGA", 2022]
+  OIL: [0.5, "UGA", 2023]
+  HYD: [18, "UGA", 2023]
+  BIO: [2, "UGA", 2023]
+  SPV: [0.4, "UGA", 2020]
+  OIL: [0.45, "UGA", 2020]
+  HYD: [15, "UGA", 2020]
+  BIO: [1.2, "UGA", 2020]
+  SPV: [0.3, "UGA", 2020]
 
 
   
