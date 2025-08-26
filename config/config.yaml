@@ -141,7 +141,7 @@ user_defined_capacity_storage:
   sto5: [PWRSDSKENXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
   sto6: [PWRSDSETHXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
   sto7: [PWRSDSTZAXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
-  sto8: [PWRSDSUGAXX01, .3, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto8: [PWRSDSUGAXX01, .3, 2026, 2026, 1, 1938, 44.25, 0, 85]
 
 transmission_parameters:
 # technology_group: [Line CAPEX, 
