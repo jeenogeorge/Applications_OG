@@ -4,8 +4,8 @@ scenario: "KTEHighDemand"
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
 # have to do it country wise (****above way did not work****)
 
-# for country wise - eg :kenya make crossborderTrade: False transmission_planned: False and comment out 
-# any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0, etc
+# for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
+# any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission final year of expansion from 2050 to 2025 and built rate from 1 to 0, etc
 #  like -> trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
 # IMPORTANT - for ethiopia - remove urn from no_invest technologoes
 
@@ -146,11 +146,11 @@ user_defined_capacity_storage:
 # $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
   sto1: [PWRLDSKENXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto2: [PWRLDSETHXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
-  sto3: [PWRLDSTZAXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
+  sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
   sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto5: [PWRSDSKENXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
   sto6: [PWRSDSETHXX01, .1, 2026, 2026, 1.5, 1938, 44.25, 0, 85]
-  sto7: [PWRSDSTZAXX01, .1, 2026, 2026, 1.2, 1938, 44.25, 0, 85]
+  sto7: [PWRSDSTZAXX01, .2, 2026, 2026, 1, 1938, 44.25, 0, 85]
   sto8: [PWRSDSUGAXX01, .3, 2026, 2026, .5, 1938, 44.25, 0, 85]
 
 transmission_parameters:
