@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "KTEUBaseline"
+scenario: "BASELINEKenya"
 # for KTEHighDemandNointerconnection, make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
 # have to do it country wise (****above way did not work****)
@@ -7,7 +7,7 @@ scenario: "KTEUBaseline"
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission final year of expansion from 2050 to 2025 and built rate from 1 to 0, etc
 #  like -> trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
-# IMPORTANT - for ethiopia - remove urn from no_invest technologoes
+# IMPORTANT - for ethiopia & uganda - remove urn from no_invest technologoes
 
 
 # Temporal Parameters 
@@ -33,12 +33,12 @@ timeshift: 3 # value between -11 and 12
 # Spatial Parameters 
 geographic_scope:
   - "KEN"
-  - "TZA"
-  - "ETH"
-  - "UGA"
+  #- "TZA"
+  #- "ETH"
+  #- "UGA"
 
 # Set to True if transmission should be included
-crossborderTrade: True
+crossborderTrade: False
 
 # Set to True if existing transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
@@ -46,7 +46,7 @@ transmission_existing: True
 
 # Set to True if planned transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
-transmission_planned: True
+transmission_planned: False
 
 
 # Set to True if existing storage capacities should be included
@@ -120,12 +120,12 @@ user_defined_capacity_transmission:
 # Per technology, only the capacity, build_year, first_year_of_expansion, 
 # final_year_of_expansion and build_rate_per_year parameters can deviate
 # from each other. For all other parameters only the last entry will be used.
-  trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2050, 1, 350, 13, 4, 95]
-  trn2: [TRNKENXXTZAXX, 2, 2025, 2025, 2050, 1, 350, 13, 4, 95]
-  trn3: [TRNETHXXKENXX, .2, 2010, 2025, 2050, 1, 350, 13, 4, 95]
-  trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2050, 1, 350, 13, 4, 95]
-  trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
-  trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
+  trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
+  trn2: [TRNKENXXTZAXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
+  trn3: [TRNETHXXKENXX, .2, 2010, 2025, 2025, 0, 350, 13, 4, 95]
+  trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2025, 0, 350, 13, 4, 95]
+  #trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
+  #trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
 
 user_defined_capacity_storage:
 # entry: [technology, 
@@ -144,13 +144,13 @@ user_defined_capacity_storage:
 # Units are in GW (capacity/build_rate_per_year), 
 # m$/GW (capex_cost/annual_fixed_O&M_cost), 
 # $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
-  sto1: [PWRLDSKENXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
-  sto2: [PWRLDSETHXX01, .1, 2026, 2026, .8, 3794, 20.2, 0.58, 80]
-  sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
+  sto1: [PWRLDSKENXX01, .2, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
+  sto2: [PWRLDSETHXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
+  sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
-  sto5: [PWRSDSKENXX01, .1, 2026, 2026, .2, 1938, 44.25, 0, 85]
-  sto6: [PWRSDSETHXX01, .1, 2026, 2026, 1.5, 1938, 44.25, 0, 85]
-  sto7: [PWRSDSTZAXX01, .2, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto5: [PWRSDSKENXX01, .1, 2026, 2026, .1, 1938, 44.25, 0, 85]
+  sto6: [PWRSDSETHXX01, .1, 2026, 2026, .5, 1938, 44.25, 0, 85]
+  sto7: [PWRSDSTZAXX01, .1, 2026, 2026, .1, 1938, 44.25, 0, 85]
   sto8: [PWRSDSUGAXX01, .3, 2026, 2026, .5, 1938, 44.25, 0, 85]
 
 transmission_parameters:
