@@ -144,7 +144,7 @@ user_defined_capacity_storage:
 # Units are in GW (capacity/build_rate_per_year), 
 # m$/GW (capex_cost/annual_fixed_O&M_cost), 
 # $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
-  sto1: [PWRLDSKENXX01, .2, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
+  sto1: [PWRLDSKENXX01, .1, 2026, 2026, .2, 3794, 20.2, 0.58, 80]
   sto2: [PWRLDSETHXX01, .1, 2026, 2026, .5, 3794, 20.2, 0.58, 80]
   sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
