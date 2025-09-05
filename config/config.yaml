@@ -1,11 +1,11 @@
 # Scenario Name 
-scenario: "kteuIndividualKenya"
+scenario: "kteuHighIndividualUganda"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission final year of expansion from 2050 to 2025 and built rate from 1 to 0, etc
 #  like -> trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
-# IMPORTANT - for ethiopia - remove urn from no_invest technologoes
+# IMPORTANT - for ethiopia & uganda - remove urn from no_invest technologoes
 
 
 # Temporal Parameters 
@@ -30,10 +30,10 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
+  #- "KEN"
   #- "TZA"
   #- "ETH"
-  #- "UGA"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: False
@@ -75,7 +75,7 @@ no_invest_technologies:
   - "COA"
   - "OCG"
   - "OIL"
-  - "URN"
+  #- "URN"
   - "WOF"
   - "CCG"
   - "WAV"
@@ -122,8 +122,15 @@ user_defined_capacity_transmission:
   trn2: [TRNKENXXTZAXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
   trn3: [TRNETHXXKENXX, .2, 2010, 2025, 2025, 0, 350, 13, 4, 95]
   trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2025, 0, 350, 13, 4, 95]
-  #trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
-  #trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
+  trn5: [TRNUGAXXTZAXX, .2, 2010, 2026, 2050, 0, 350, 13, 4, 95]
+  trn6: [TRNTZAXXUGAXX, .2, 2010, 2026, 2050, 0, 350, 13, 4, 95]
+  trn7: [TRNKENXXUGAXX, .1, 2010, 2026, 2050, 0, 350, 13, 4, 95]
+  trn8: [TRNUGAXXKENXX, .1, 2010, 2026, 2050, 0, 350, 13, 4, 95]
+  #trn9: [TRNETHXXUGAXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn10: [TRNUGAXXETHXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn11: [TRNTZAXXETHXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn12: [TRNETHXXTZAXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
+
 
 user_defined_capacity_storage:
 # entry: [technology, 
