@@ -120,18 +120,18 @@ user_defined_capacity_transmission:
 # Per technology, only the capacity, build_year, first_year_of_expansion, 
 # final_year_of_expansion and build_rate_per_year parameters can deviate
 # from each other. For all other parameters only the last entry will be used.
-  trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2050, 1, 350, 13, 4, 95]
-  trn2: [TRNKENXXTZAXX, 2, 2025, 2025, 2050, 1, 350, 13, 4, 95]
-  trn3: [TRNETHXXKENXX, .2, 2010, 2025, 2050, 1, 350, 13, 4, 95]
-  trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2050, 1, 350, 13, 4, 95]
-  trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
-  trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 1, 350, 13, 4, 95]
-  trn7: [TRNKENXXUGAXX, .1, 2010, 2026, 2050, 1, 350, 13, 4, 95]
-  trn8: [TRNUGAXXKENXX, .1, 2010, 2026, 2050, 1, 350, 13, 4, 95]
-  trn9: [TRNETHXXUGAXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
-  trn10: [TRNUGAXXETHXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
-  trn11: [TRNTZAXXETHXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
-  trn12: [TRNETHXXTZAXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
+  trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2050, 5, 350, 13, 4, 95]
+  trn2: [TRNKENXXTZAXX, 2, 2025, 2025, 2050, 5, 350, 13, 4, 95]
+  trn3: [TRNETHXXKENXX, .2, 2010, 2025, 2050, 5, 350, 13, 4, 95]
+  trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2050, 5, 350, 13, 4, 95]
+  trn5: [TRNUGAXXTZAXX, 1, 2026, 2027, 2050, 5, 350, 13, 4, 95]
+  trn6: [TRNTZAXXUGAXX, 1, 2026, 2027, 2050, 5, 350, 13, 4, 95]
+  trn7: [TRNKENXXUGAXX, .1, 2010, 2026, 2050, 5, 350, 13, 4, 95]
+  trn8: [TRNUGAXXKENXX, .1, 2010, 2026, 2050, 5, 350, 13, 4, 95]
+  trn9: [TRNETHXXUGAXX, 1, 2026, 2026, 2050, 5, 350, 13, 4, 95]
+  trn10: [TRNUGAXXETHXX, 1, 2026, 2026, 2050, 5, 350, 13, 4, 95]
+  trn11: [TRNTZAXXETHXX, 1, 2026, 2026, 2050, 5, 350, 13, 4, 95]
+  trn12: [TRNETHXXTZAXX, 1, 2026, 2026, 2050, 5, 350, 13, 4, 95]
 
 user_defined_capacity_storage:
 # entry: [technology, 
