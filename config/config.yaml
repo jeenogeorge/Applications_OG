@@ -11,7 +11,7 @@ scenario: "BASELINEUganda"
 
 
 # Temporal Parameters 
-startYear: 2021
+startYear: 2022
 endYear: 2050
 daytype: False
 dayparts:
@@ -103,6 +103,7 @@ user_defined_capacity:
   PWRSPVETHXX01: [.10, 2026, 2028, 5, 800, 33]
   PWRBIOUGAXX01: [.01, 2010, 2022, 0.001, 800, 33]
   PWRSPVUGAXX01: [.06, 2015, 2022, 0.001, 800, 33]
+  #PWRHYDUGAXX01: [.7, 2023, 2030, 1, 800, 33]
   #PWROILUGAXX01: [.01, 2000, 2022, 0.001, 800, 33]
   #PWRURNKENXX01: [2, 2040, 2040, 0, 8000, 40]
   #PWRURNTZAXX01: [2, 2040, 2040, 0, 8000, 40]
@@ -277,11 +278,11 @@ min_generation_factors:
   #SPV: [0.1, "ETH", 2020]
   #BIO: [0.08, "ETH", 2020]
   OIL: [0.5, "UGA", 2023]
-  HYD: [18, "UGA", 2023]
+  #HYD: [18, "UGA", 2023]
   #BIO: [2, "UGA", 2023]
   SPV: [0.4, "UGA", 2020]
   OIL: [0.45, "UGA", 2020]
-  HYD: [15, "UGA", 2020]
+  #HYD: [15, "UGA", 2020]
   #BIO: [1.2, "UGA", 2020]
   SPV: [0.3, "UGA", 2020]
 
