@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEUganda"
+scenario: "BASELINETanzania"
 # for KTEHighDemandNointerconnection, make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
 # have to do it country wise (****above way did not work****)
@@ -33,9 +33,9 @@ timeshift: 3 # value between -11 and 12
 # Spatial Parameters 
 geographic_scope:
   #- "KEN"
-  #- "TZA"
+  - "TZA"
   #- "ETH"
-  - "UGA"
+  # - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: False
@@ -103,6 +103,8 @@ user_defined_capacity:
   PWRSPVETHXX01: [.10, 2026, 2028, 5, 800, 33]
   PWRBIOUGAXX01: [.01, 2010, 2022, 0.001, 800, 33]
   PWRSPVUGAXX01: [.06, 2015, 2022, 0.001, 800, 33]
+  PWRHYDTZAXX01: [.5, 2010, 2024, 3, 800, 90]
+  #PWROILTZAXX01: [.01, 1990, 2022, 0, 3800, 33]
   #PWRHYDUGAXX01: [.7, 2023, 2030, 1, 800, 33]
   #PWROILUGAXX01: [.01, 2000, 2022, 0.001, 800, 33]
   #PWRURNKENXX01: [2, 2040, 2040, 0, 8000, 40]
@@ -262,13 +264,13 @@ min_generation_factors:
   OIL: [0.1, "TZA", 2022]
   OCG: [23, "TZA", 2022]
   CCG: [1, "TZA", 2022]
-  HYD: [10, "TZA", 2022]
+  #HYD: [10, "TZA", 2022]
   SPV: [0.1, "TZA", 2022]
   BIO: [0.3, "TZA", 2022]
-  OIL: [0.08, "TZA", 2020]
+  #OIL: [0.08, "TZA", 2020]
   OCG: [19, "TZA", 2020]
   CCG: [.8, "TZA", 2020]
-  HYD: [8, "TZA", 2020]
+  #HYD: [8, "TZA", 2020]
   SPV: [0.08, "TZA", 2020]
   BIO: [0.2, "TZA", 2020]
   HYD: [60, "ETH", 2022]
