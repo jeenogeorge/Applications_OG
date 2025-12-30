@@ -75,7 +75,7 @@ no_invest_technologies:
   - "COA"
   - "OCG"
   - "OIL"
-  - "URN"
+  #- "URN"
   - "WOF"
   - "CCG"
   - "WAV"
@@ -107,8 +107,8 @@ user_defined_capacity:
   PWRHYDETHXX01: [.025, 2022, 2030, 3, 800, 90]
   PWRHYDUGAXX01: [.025, 2022, 2030, 3, 800, 90]
   #PWRHYDETHXX01: [.025, 2022, 2030, 1, 800, 90]
-  #PWRURNETHXX01: [.5, 2030, 2030, 0.5, 8000, 40]
-  #PWRURNTZAXX01: [2, 2040, 2040, 0, 8000, 40]
+  PWRURNKENXX01: [.5, 2030, 2030, 0.5, 8000, 33]
+  PWRURNTZAXX01: [.5, 2030, 2030, 0.5, 8000, 33]
   #PWRURNETHXX01: [2, 2040, 2040, 0, 8000, 40]
 
 user_defined_capacity_transmission:
