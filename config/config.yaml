@@ -81,6 +81,7 @@ no_invest_technologies:
   - "WOF"
   - "CCG"
   - "WAV"
+  - "LDS"
 
 # Result Parameters 
 results_by_country: True
@@ -350,13 +351,13 @@ re_targets:
 # EXAMPLE:  T02: ["IND", [], "PCT", 2030, 2040, 60]
 # EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
 # EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
-  T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["UGAXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 20]
+  T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["UGAXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 30]
 
 
