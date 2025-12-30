@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEKenya"
+scenario: "BASELINEUganda"
 # for KTEHighDemandNointerconnection, make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
 # have to do it country wise (****above way did not work****)
@@ -32,10 +32,10 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
+  #- "KEN"
   #- "TZA"
   #- "ETH"
-  #- "UGA"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
