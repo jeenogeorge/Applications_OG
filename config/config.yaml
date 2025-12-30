@@ -38,7 +38,7 @@ geographic_scope:
   #- "UGA"
 
 # Set to True if transmission should be included
-crossborderTrade: False
+crossborderTrade: True
 
 # Set to True if existing transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
@@ -105,6 +105,7 @@ user_defined_capacity:
   PWRSPVUGAXX01: [.06, 2015, 2022, 0.001, 800, 33]
   PWRHYDTZAXX01: [.08, 2022, 2030, 3, 800, 90]
   PWRHYDKENXX01: [.025, 2022, 2030, 1, 800, 90]
+  #PWRWASKENXX01: [.1, 2022, 2030, 1, 800, 33]
   #PWRHYDUGAXX01: [.1, 2022, 2030, 1, 800, 90]
   #PWROILTZAXX01: [.01, 1990, 2022, 0, 3800, 33]
   #PWRHYDUGAXX01: [.7, 2023, 2030, 1, 800, 33]
@@ -209,7 +210,7 @@ reserve_margin:
 # RESERVE_MARGIN: [PERCENTAGE, START_YEAR, END_YEAR]
 # Years for which there is no PERCENTAGE value will be interpolated
 # EXAMPLE:  RM1: [10, 2025, 2050]
-  RM1: [10, 2025, 2050]
+  RM1: [10, 2028, 2050]
 
 reserve_margin_technologies:
 # TECHNOLOGY: PERCENTAGE,
@@ -258,11 +259,22 @@ min_generation_factors:
   #WON: [7, "KEN", 2023]
   #SPV: [2, "KEN", 2023]
   #GEO: [21, "KEN", 2023]
-  #OIL: [4, "KEN", 2020]
-  #HYD: [8, "KEN", 2020]
-  #WON: [6, "KEN", 2020]
-  #SPV: [.5, "KEN", 2020]
-  #GEO: [17, "KEN", 2020]
+  #OIL: [4, "KEN", 2022]
+  #HYD: [8, "KEN", 2022]
+  #WON: [7, "KEN", 2022]
+  #SPV: [1.5, "KEN", 2022]
+  #GEO: [15, "KEN", 2022]
+  #OIL: [4, "KEN", 2023]
+  #HYD: [8, "KEN", 2022]
+  #WON: [7, "KEN", 2023]
+  #SPV: [1.5, "KEN", 2022]
+  #GEO: [15, "KEN", 2023]
+  #OIL: [4, "KEN", 2024]
+  #HYD: [8, "KEN", 2022]
+  #WON: [7, "KEN", 2024]
+  #SPV: [1.5, "KEN", 2022]
+  #GEO: [15, "KEN", 2024]
+  #BIO: [0.9, "KEN", 2022]
   #OIL: [0.1, "TZA", 2022]
   #OCG: [23, "TZA", 2022]
   #CCG: [1, "TZA", 2022]
@@ -344,6 +356,7 @@ re_targets:
 # EXAMPLE:  T02: ["IND", [], "PCT", 2030, 2040, 60]
 # EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
 # EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
+  #T01: ["", [], "PCT", 2040, 2050, 60]
   T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 30]
   T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 30]
   T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 30]
