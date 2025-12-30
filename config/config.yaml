@@ -36,7 +36,7 @@ geographic_scope:
   #- "UGA"
 
 # Set to True if transmission should be included
-crossborderTrade: False
+crossborderTrade: True
 
 # Set to True if existing transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
@@ -79,6 +79,7 @@ no_invest_technologies:
   - "WOF"
   - "CCG"
   - "WAV"
+  - "LDS"
 
 # Result Parameters 
 results_by_country: True
@@ -96,13 +97,15 @@ user_defined_capacity:
 # EXAMPLE:  PWRCOAINDWE01: [8, 2000, 2025, 5, 1100, 35]
 # Units are in GW (capacity/build_rate_per_year), m$/GW (capex_cost), 
 # % (efficiency).
-  PWRSPVKENXX01: [.25, 2026, 2028, 5, 800, 33]
+  PWRSPVKENXX01: [.4, 2026, 2028, 5, 800, 33]
   PWRSPVTZAXX01: [.15, 2026, 2028, 5, 800, 33]
   PWRSPVETHXX01: [.10, 2026, 2028, 5, 800, 33]
   PWRBIOUGAXX01: [.01, 2010, 2022, 0.001, 800, 33]
   PWRSPVUGAXX01: [.06, 2015, 2022, 0.001, 800, 33]
   PWRHYDTZAXX01: [.08, 2022, 2030, 3, 800, 90]
   PWRHYDKENXX01: [.025, 2022, 2030, 1, 800, 90]
+  #PWRHYDETHXX01: [.025, 2022, 2030, 3, 800, 90]
+  #PWRHYDUGAXX01: [.025, 2022, 2030, 3, 800, 90]
   #PWRHYDETHXX01: [.025, 2022, 2030, 1, 800, 90]
   #PWRURNKENXX01: [2, 2040, 2040, 0, 8000, 40]
   #PWRURNTZAXX01: [2, 2040, 2040, 0, 8000, 40]
@@ -205,7 +208,7 @@ reserve_margin:
 # RESERVE_MARGIN: [PERCENTAGE, START_YEAR, END_YEAR]
 # Years for which there is no PERCENTAGE value will be interpolated
 # EXAMPLE:  RM1: [10, 2025, 2050]
-  RM1: [10, 2025, 2050]
+  RM1: [10, 2028, 2050]
 
 reserve_margin_technologies:
 # TECHNOLOGY: PERCENTAGE,
@@ -249,14 +252,14 @@ min_generation_factors:
 # generation values.
 # EXAMPLE:  OCG: [50, "IND", 2021]
   # OIL: [5, "KEN", 2023]
-  # HYD: [10, "KEN", 2023]
+  # HYD: [10, "KEN", 2022]
   # BIO: [1, "KEN", 2023]
-  # WON: [7, "KEN", 2023]
+  # WON: [7, "KEN", 2022]
   # SPV: [2, "KEN", 2023]
-  # GEO: [21, "KEN", 2023]
+  # GEO: [19, "KEN", 2022]
   # OIL: [4, "KEN", 2020]
-  # HYD: [8, "KEN", 2020]
-  # WON: [6, "KEN", 2020]
+  # HYD: [12, "KEN", 2024]
+  # WON: [7, "KEN", 2022]
   # SPV: [.5, "KEN", 2020]
   # GEO: [17, "KEN", 2020]
   # OIL: [0.1, "TZA", 2022]
@@ -341,13 +344,13 @@ re_targets:
 # EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
 # EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
   #T01: ["", [], "PCT", 2040, 2050, 55]
-  T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 30]
-  T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 30]
-  T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 30]
-  T01: ["UGAXX", ['SPV'], "PCT", 2026, 2050, 30]
-  T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 30]
-  T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 30]
-  T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 30]
-  T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["KENXX", ['SPV','WON'], "PCT", 2026, 2050, 30]
+  T02: ["TZAXX", ['SPV', 'WON'], "PCT", 2026, 2050, 30]
+  T03: ["ETHXX", ['SPV','WON'], "PCT", 2026, 2050, 30]
+  T04: ["UGAXX", ['SPV','WON'], "PCT", 2026, 2050, 30]
+  #T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 30]
+  #T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 30]
+  #T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 30]
+  #T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 30]
 
 
