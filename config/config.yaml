@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEEthiopia"
+scenario: "BASELINEKenya"
 # for KTEHighDemandNointerconnection, make crossborderTrade: False transmission_planned: False and comment out 
 # any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
 # have to do it country wise (****above way did not work****)
@@ -32,9 +32,9 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  #- "KEN"
+  - "KEN"
   #- "TZA"
-  - "ETH"
+  #- "ETH"
   #- "UGA"
 
 # Set to True if transmission should be included
@@ -344,13 +344,13 @@ re_targets:
 # EXAMPLE:  T02: ["IND", [], "PCT", 2030, 2040, 60]
 # EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
 # EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
-  T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["UGAXX", ['SPV'], "PCT", 2026, 2050, 20]
-  T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 20]
-  T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 20]
+  T01: ["KENXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["TZAXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["ETHXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["UGAXX", ['SPV'], "PCT", 2026, 2050, 30]
+  T01: ["KENXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 30]
+  T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 30]
 
 
