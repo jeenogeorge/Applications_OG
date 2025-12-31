@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kteuHighIndividualKenya"
+scenario: "kteuHighIndividualTanzania"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -30,8 +30,8 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
-  #- "TZA"
+  #- "KEN"
+  - "TZA"
   #- "ETH"
   #- "UGA"
 
@@ -107,8 +107,8 @@ user_defined_capacity:
   PWRHYDETHXX01: [.025, 2022, 2030, 3, 800, 90]
   PWRHYDUGAXX01: [.025, 2022, 2030, 3, 800, 90]
   #PWRHYDETHXX01: [.025, 2022, 2030, 1, 800, 90]
-  PWRURNKENXX01: [.5, 2030, 2030, 0.5, 8000, 33]
-  PWRURNTZAXX01: [.5, 2030, 2030, 0.5, 8000, 33]
+  PWRURNKENXX01: [.5, 2035, 2035, 0.5, 8000, 33]
+  PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 8000, 33]
   #PWRURNETHXX01: [2, 2040, 2040, 0, 8000, 40]
 
 user_defined_capacity_transmission:
