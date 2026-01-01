@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kteuHighIndividualTanzania"
+scenario: "kteuHighIndividualKenya"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -27,8 +27,8 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  #- "KEN"
-  - "TZA"
+  - "KEN"
+  #- "TZA"
   #- "ETH"
   #- "UGA"
 
