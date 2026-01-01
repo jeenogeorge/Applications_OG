@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "KTEUBaselineInterconnected"
+scenario: "NUCLEARKTEUBaselineInterconnected"
 
 # for nuclear special case - IMP change scenario name, remove URN from no invest and uncomment nuclear in user defined capacity
 
@@ -70,7 +70,7 @@ no_invest_technologies:
   - "COA"
   - "OCG"
   - "OIL"
-  - "URN"
+  #- "URN"
   - "WOF"
   - "CCG"
   - "WAV"
@@ -104,11 +104,9 @@ user_defined_capacity:
   #PWRURNKENXX01: [2, 2040, 2040, 0, 8000, 40]
   #PWRURNTZAXX01: [2, 2040, 2040, 0, 8000, 40]
   #PWRURNETHXX01: [2, 2040, 2040, 0, 8000, 40]
-  #PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  #PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  #PWRURNETHXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  #PWRURNUGAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-
+  PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
+  PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
+  
 user_defined_capacity_transmission:
 # entry: [technology,
 #         capacity, 
