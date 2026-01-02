@@ -4,7 +4,7 @@ scenario: "BASELINEKenya"
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
 # FOR NUCLEAR - imp - CHNAGE SCENARIO NAME AND IN NO INVEST TECHNOLOGIES - UNCOMMENT URN
-# IN USER DEFINED CAPACITY - UNCOMMENT URN FOR ALL COUNTRIES
+# IN USER DEFINED CAPACITY - UNCOMMENT URN FOR KEN, TZA
 
 # Temporal Parameters 
 startYear: 2022
@@ -110,9 +110,7 @@ user_defined_capacity:
   #PWROILUGAXX01: [.01, 2000, 2022, 0.001, 800, 33]
   #PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
   #PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  #PWRURNETHXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  #PWRURNUGAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-
+  
 
 user_defined_capacity_transmission:
 # entry: [technology,
