@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "NUCLEARKTEUBaselineInterconnected"
+scenario: "KTEUBaselineInterconnected"
 
 # for nuclear special case - IMP change scenario name, remove URN from no invest and uncomment nuclear in user defined capacity
 
@@ -17,9 +17,10 @@ dayparts:
   D6: [21, 25]
 seasons:
 # season : [month 1, month 2, ...] (all inclusive)
-  S1: [1, 2, 3, 4]
-  S2: [5, 6, 7, 8]
-  S3: [9, 10, 11, 12]
+  S1: [1, 2]
+  S2: [3, 4, 5]
+  S3: [6, 7, 8, 9]
+  S4: [10, 11, 12]
 
 timeshift: 3 # value between -11 and 12
   
@@ -70,7 +71,7 @@ no_invest_technologies:
   - "COA"
   - "OCG"
   - "OIL"
-  #- "URN"
+  - "URN"
   - "WOF"
   - "CCG"
   - "WAV"
@@ -101,11 +102,8 @@ user_defined_capacity:
   PWRHYDKENXX01: [.025, 2022, 2030, 1, 2100, 90]
   PWRHYDETHXX01: [.025, 2022, 2030, 1, 2100, 90]
   PWRHYDUGAXX01: [.025, 2022, 2030, 1, 2100, 90]
-  #PWRURNKENXX01: [2, 2040, 2040, 0, 8000, 40]
-  #PWRURNTZAXX01: [2, 2040, 2040, 0, 8000, 40]
-  #PWRURNETHXX01: [2, 2040, 2040, 0, 8000, 40]
-  PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
-  PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
+  #PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
+  #PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
   
 user_defined_capacity_transmission:
 # entry: [technology,
