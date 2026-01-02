@@ -1,14 +1,7 @@
 # Scenario Name 
 scenario: "KTEHighDemandInterconnected"
-# for KTEHighDemandNointerconnection, make crossborderTrade: False transmission_planned: False and comment out 
-# any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission first year of expansion from 2026 to 2025 and builr rate from 1 to 0
-# have to do it country wise (****above way did not work****)
-
-# for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
-# any user_defined_capacity_transmission: after 2025 - change exiting user defined transimission final year of expansion from 2050 to 2025 and built rate from 1 to 0, etc
-#  like -> trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
-# IMPORTANT - for ethiopia - remove urn from no_invest technologoes
-
+# for NoNUCLEAR SCENARIO- IMP *** CHANGE scenario name, keep URN in no invest technology and comment out
+# userdefine - URN - KEN, TZA
 
 # Temporal Parameters 
 startYear: 2022
