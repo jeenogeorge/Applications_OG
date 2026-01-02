@@ -3,7 +3,7 @@ scenario: "kteuHighIndividualKenya"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
-
+# for noNUCLEAR (ken, tza) - change scenario name, keep URN as no invest technology and from user defined capacity comment out URN for ken and tza
 
 # Temporal Parameters 
 startYear: 2022
@@ -19,9 +19,10 @@ dayparts:
   D6: [21, 25]
 seasons:
 # season : [month 1, month 2, ...] (all inclusive)
-  S1: [1, 2, 3, 4]
-  S2: [5, 6, 7, 8]
-  S3: [9, 10, 11, 12]
+  S1: [1, 2]
+  S2: [3, 4, 5]
+  S3: [6, 7, 8, 9]
+  S4: [10, 11, 12]
 
 timeshift: 3 # value between -11 and 12
   
