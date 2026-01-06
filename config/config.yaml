@@ -157,7 +157,7 @@ user_defined_capacity_storage:
 # $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
   sto1: [PWRLDSKENXX01, .1, 2026, 2026, .1, 3794, 20.2, 0.58, 80]
   sto2: [PWRLDSETHXX01, .1, 2026, 2026, .1, 3794, 20.2, 0.58, 80]
-  sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .1, 3794, 20.2, 0.58, 80]
+  sto3: [PWRLDSTZAXX01, .3, 2026, 2026, .3, 3794, 20.2, 0.58, 80]
   sto4: [PWRLDSUGAXX01, .1, 2026, 2026, .1, 3794, 20.2, 0.58, 80]
   sto5: [PWRSDSKENXX01, .1, 2026, 2026, .2, 968, 24, 0, 85]
   sto6: [PWRSDSETHXX01, .1, 2026, 2026, 1.5, 968, 24, 0, 85]
@@ -350,5 +350,4 @@ re_targets:
   #T01: ["TZAXX", ['WON'], "PCT", 2026, 2050, 30]
   #T01: ["ETHXX", ['WON'], "PCT", 2026, 2050, 30]
   #T01: ["UGAXX", ['WON'], "PCT", 2026, 2050, 30]
-
 
