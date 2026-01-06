@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kteuHighIndividualKneya"
+scenario: "kteuHighIndividualKenya"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -229,7 +229,7 @@ reserve_margin_technologies:
   WAS : 90
   WAV : 30
   WOF : 30
-  WON : 0
+  WON : 30
   LDS : 70
   SDS : 70    
 
