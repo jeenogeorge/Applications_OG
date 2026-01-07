@@ -234,8 +234,8 @@ reserve_margin_technologies:
   WAV : 30
   WOF : 30
   WON : 30
-  LDS : 70
-  SDS : 70    
+  LDS : 30
+  SDS : 30    
 
 emission_limit:
 # - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
