@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "kteuHighIndividualKenya"
+scenario: "kteuHighIndividualUganda"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -28,10 +28,10 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
+  #- "KEN"
   #- "TZA"
   #- "ETH"
-  #- "UGA"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -95,15 +95,15 @@ user_defined_capacity:
 # EXAMPLE:  PWRCOAINDWE01: [8, 2000, 2025, 5, 1100, 35]
 # Units are in GW (capacity/build_rate_per_year), m$/GW (capex_cost), 
 # % (efficiency).
-  PWRSPVKENXX01: [.4, 2026, 2028, 5, 820, 33]
-  PWRSPVTZAXX01: [.15, 2026, 2028, 5, 820, 33]
-  PWRSPVETHXX01: [.10, 2026, 2028, 5, 820, 33]
-  PWRBIOUGAXX01: [.01, 2010, 2022, 0.1, 2100, 33]
-  PWRSPVUGAXX01: [.06, 2015, 2026, 5, 900, 33]
-  PWRHYDTZAXX01: [.08, 2022, 2030, 3, 2100, 90]
-  PWRHYDKENXX01: [.025, 2022, 2030, 1, 2100, 90]
-  PWRHYDETHXX01: [.025, 2022, 2030, 3, 2100, 90]
-  PWRHYDUGAXX01: [.025, 2022, 2030, 3, 2100, 90]
+  # PWRSPVKENXX01: [.4, 2026, 2028, 5, 820, 33]
+  # PWRSPVTZAXX01: [.15, 2026, 2028, 5, 820, 33]
+  # PWRSPVETHXX01: [.10, 2026, 2028, 5, 820, 33]
+  # PWRBIOUGAXX01: [.01, 2010, 2022, 0.1, 2100, 33]
+  # PWRSPVUGAXX01: [.06, 2015, 2026, 5, 900, 33]
+  # PWRHYDTZAXX01: [.08, 2022, 2030, 3, 2100, 90]
+  # PWRHYDKENXX01: [.025, 2022, 2030, 1, 2100, 90]
+  # PWRHYDETHXX01: [.025, 2022, 2030, 3, 2100, 90]
+  # PWRHYDUGAXX01: [.025, 2022, 2030, 3, 2100, 90]
   #PWRHYDETHXX01: [.025, 2022, 2030, 1, 800, 90]
   #PWRURNKENXX01: [.5, 2035, 2035, 0.5, 4000, 33]
   #PWRURNTZAXX01: [.5, 2035, 2035, 0.5, 4000, 33]
@@ -230,8 +230,8 @@ reserve_margin_technologies:
   WAV : 30
   WOF : 30
   WON : 30
-  LDS : 70
-  SDS : 70    
+  LDS : 30
+  SDS : 30    
 
 emission_limit:
 # - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
