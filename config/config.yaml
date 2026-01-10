@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEUganda"
+scenario: "BASELINETanzania"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -30,9 +30,9 @@ timeshift: 3 # value between -11 and 12
 # Spatial Parameters 
 geographic_scope:
   #- "KEN"
-  #- "TZA"
+  - "TZA"
   #- "ETH"
-  - "UGA"
+  #- "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -220,11 +220,11 @@ reserve_margin_technologies:
   BIO : 90
   CCG : 90
   COA : 90
-  CCS : 90
+  #CCS : 90
   COG : 50
-  CSP : 30
+  #CSP : 30
   GEO : 90
-  HYD : 30
+  HYD : 70
   OCG : 90
   OIL : 90
   OTH : 90
@@ -234,8 +234,8 @@ reserve_margin_technologies:
   WAV : 10
   WOF : 10
   WON : 10
-  LDS : 30
-  SDS : 30    
+  LDS : 50
+  SDS : 50    
 
 emission_limit:
 # - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
@@ -320,7 +320,7 @@ max_availability_factors:
 # max generation policy targets.
 # EXAMPLE: - ["IND", 'COA', 2030, 2050, 25]
   #- ["KEN", 'HYD', 2022, 2025, 10]
-  - ["ETH", 'HYD', 2015, 2050, 1]
+  #- ["KEN", 'HYD', 2015, 2050, 100]
   #- ["KEN", 'OCG', 2025, 2050, 1]
   #- ["KEN", 'CCG', 2015, 2050, 1]
   #- ["KEN", 'OIL', 2025, 2050, 1]
