@@ -73,7 +73,7 @@ no_invest_technologies:
   - "OIL"
   - "URN"
   - "WOF"
-  - "CCG"
+  #- "CCG"
   - "WAV"
   - "LDS"
 
@@ -209,7 +209,7 @@ reserve_margin:
 # RESERVE_MARGIN: [PERCENTAGE, START_YEAR, END_YEAR]
 # Years for which there is no PERCENTAGE value will be interpolated
 # EXAMPLE:  RM1: [10, 2025, 2050]
-  RM1: [10, 2028, 2050]
+  RM1: [10, 2030, 2050]
 
 reserve_margin_technologies:
 # TECHNOLOGY: PERCENTAGE,
@@ -217,22 +217,22 @@ reserve_margin_technologies:
 # reserve margin. Technologies that are not listed are excluded from contributing.
 # EXAMPLE:  CCG : 90
   BIO : 90
-  CCG : 0
-  COA : 0
-  COG : 0
-  CSP : 0
-  GEO : 0
+  CCG : 90
+  COA : 90
+  CCS : 90
+  COG : 50
+  CSP : 30
+  GEO : 90
   HYD : 30
-  OCG : 0
-  OIL : 0
-  OTH : 0
-  PET : 0
-  SPV : 30
+  OCG : 90
+  OIL : 90
+  OTH : 90
+  PET : 90
   URN : 90
   WAS : 90
-  WAV : 30
-  WOF : 30
-  WON : 30
+  WAV : 10
+  WOF : 10
+  WON : 10
   LDS : 30
   SDS : 30    
 
@@ -253,14 +253,15 @@ min_generation_factors:
 # generation values.
 # EXAMPLE:  OCG: [50, "IND", 2021]
   # OIL: [5, "KEN", 2023]
-  # HYD: [10, "KEN", 2023]
+  HYD: [10, "KEN", 2022]
   # BIO: [1, "KEN", 2023]
   # WON: [7, "KEN", 2023]
   # SPV: [2, "KEN", 2023]
   # GEO: [21, "KEN", 2023]
   # OIL: [4, "KEN", 2020]
   # HYD: [8, "KEN", 2020]
-  # WON: [6, "KEN", 2020]
+  WON: [6, "KEN", 2022]
+  WON: [7, "KEN", 2023]
   # SPV: [.5, "KEN", 2020]
   # GEO: [17, "KEN", 2020]
   # OIL: [0.1, "TZA", 2022]
