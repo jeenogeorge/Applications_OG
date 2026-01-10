@@ -73,7 +73,7 @@ no_invest_technologies:
   - "PET"
   - "COA"
   - "OCG"
-  - "OIL"
+  #- "OIL"
   - "URN"
   - "WOF"
   #- "CCG"
@@ -96,15 +96,15 @@ user_defined_capacity:
 # EXAMPLE:  PWRCOAINDWE01: [8, 2000, 2025, 5, 1100, 35]
 # Units are in GW (capacity/build_rate_per_year), m$/GW (capex_cost), 
 # % (efficiency).
-  PWRSPVKENXX01: [.4, 2026, 2028, 5, 820, 33]
-  PWRSPVTZAXX01: [.15, 2026, 2028, 5, 820, 33]
-  PWRSPVETHXX01: [.10, 2026, 2028, 5, 820, 33]
-  PWRBIOUGAXX01: [.01, 2010, 2022, 0.1, 2100, 33]
-  PWRSPVUGAXX01: [.06, 2015, 2026, 5, 820, 33]
-  PWRHYDTZAXX01: [.08, 2022, 2030, 3, 2100, 90]
-  PWRHYDKENXX01: [.025, 2022, 2030, 1, 2100, 90]
-  PWRHYDETHXX01: [.025, 2022, 2030, 3, 2100, 90]
-  PWRHYDUGAXX01: [.025, 2022, 2030, 3, 2100, 90]
+  #PWRWONKENXX01: [1, 2022, 2026, 3, 1800, 33]
+  #PWRSPVTZAXX01: [.15, 2026, 2028, 5, 820, 33]
+  #PWRSPVETHXX01: [.10, 2026, 2028, 5, 820, 33]
+  #PWRBIOUGAXX01: [.01, 2010, 2022, 0.1, 2100, 33]
+  #PWRSPVUGAXX01: [.06, 2015, 2026, 5, 820, 33]
+  #PWRHYDTZAXX01: [.08, 2022, 2030, 3, 2100, 90]
+  #PWRHYDKENXX01: [.025, 2022, 2030, 1, 2100, 90]
+  #PWRHYDETHXX01: [.025, 2022, 2030, 3, 2100, 90]
+  #PWRHYDUGAXX01: [.025, 2022, 2030, 3, 2100, 90]
   #PWRWASKENXX01: [.1, 2022, 2030, 1, 800, 33]
   #PWRHYDUGAXX01: [.1, 2022, 2030, 1, 800, 90]
   #PWROILTZAXX01: [.01, 1990, 2022, 0, 3800, 33]
@@ -234,6 +234,7 @@ reserve_margin_technologies:
   WAV : 10
   WOF : 10
   WON : 10
+  SPV : 10
   LDS : 50
   SDS : 50    
 
@@ -258,8 +259,8 @@ min_generation_factors:
   #HYD: [10, "KEN", 2023]
   #HYD: [12, "KEN", 2024]
   #HYD: [12, "KEN", 2025]
-  WON: [6, "KEN", 2022]
-  WON: [7, "KEN", 2023]
+  #WON: [6, "KEN", 2022]
+  #WON: [7, "KEN", 2023]
   #WON: [7, "KEN", 2024]
   #WON: [7, "KEN", 2025]
   #BIO: [1, "KEN", 2023]
@@ -284,8 +285,8 @@ min_generation_factors:
   #BIO: [0.9, "KEN", 2022]
   #OIL: [0.1, "TZA", 2022]
   #OCG: [23, "TZA", 2022]
-  CCG: [20, "TZA", 2022]
-  CCG: [11, "TZA", 2023]
+  #CCG: [20, "TZA", 2022]
+  #CCG: [11, "TZA", 2023]
   #HYD: [10, "TZA", 2022]
   #SPV: [0.1, "TZA", 2022]
   #BIO: [0.3, "TZA", 2022]
@@ -320,13 +321,13 @@ max_availability_factors:
 # max generation policy targets.
 # EXAMPLE: - ["IND", 'COA', 2030, 2050, 25]
   #- ["KEN", 'HYD', 2022, 2025, 10]
-  #- ["KEN", 'HYD', 2015, 2050, 100]
+  #- ["KEN", 'HYD', 2022, 2022, 80]
   #- ["KEN", 'OCG', 2025, 2050, 1]
   #- ["KEN", 'CCG', 2015, 2050, 1]
   #- ["KEN", 'OIL', 2025, 2050, 1]
   #- ["TZN", 'OCG', 2026, 2050, 1]
-  - ["TZN", 'CCG', 2020, 2050, 1000]
-  #- ["KEN", 'BIO', 2015, 2050, 5]
+  #- ["TZN", 'CCG', 2020, 2050, 1000]
+  #- ["KEN", 'WON', 2022, 2026, 50]
   #- ["ETH", 'BIO', 2015, 2050, 5]
   #- ["UGA", 'BIO', 2015, 2050, 2]
 
