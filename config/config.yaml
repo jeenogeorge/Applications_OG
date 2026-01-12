@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINETanzania"
+scenario: "BASELINEUganda"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -30,9 +30,9 @@ timeshift: 3 # value between -11 and 12
 # Spatial Parameters 
 geographic_scope:
   #- "KEN"
-  - "TZA"
+  #- "TZA"
   #- "ETH"
-  #- "UGA"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -96,7 +96,7 @@ user_defined_capacity:
 # EXAMPLE:  PWRCOAINDWE01: [8, 2000, 2025, 5, 1100, 35]
 # Units are in GW (capacity/build_rate_per_year), m$/GW (capex_cost), 
 # % (efficiency).
-  #PWRWONKENXX01: [1, 2022, 2026, 3, 1800, 33]
+  #PWRWONKENXX01: [.2, 2022, 2025, 0, 1800, 100]
   #PWRSPVTZAXX01: [.15, 2026, 2028, 5, 820, 33]
   #PWRSPVETHXX01: [.10, 2026, 2028, 5, 820, 33]
   #PWRBIOUGAXX01: [.01, 2010, 2022, 0.1, 2100, 33]
@@ -167,6 +167,7 @@ user_defined_capacity_storage:
   sto6: [PWRSDSETHXX01, .1, 2026, 2026, 1.5, 968, 24, 0, 85]
   sto7: [PWRSDSTZAXX01, .1, 2026, 2026, .5, 968, 24, 0, 85]
   sto8: [PWRSDSUGAXX01, .1, 2026, 2026, .5, 968, 24, 0, 85]
+  #sto9: [PWRSDSUGAXX01, 1, 2040, 2040, .5, 900, 24, 0, 85]
 
 transmission_parameters:
 # technology_group: [Line CAPEX, 
@@ -255,11 +256,14 @@ min_generation_factors:
 # generation values.
 # EXAMPLE:  OCG: [50, "IND", 2021]
   #OIL: [5, "KEN", 2023]
-  HYD: [10, "KEN", 2022]
+  #HYD: [10, "KEN", 2022]
   #HYD: [10, "KEN", 2023]
   #HYD: [12, "KEN", 2024]
   #HYD: [12, "KEN", 2025]
-  #WON: [6, "KEN", 2022]
+  WON1: [2, "KEN", 2022]
+  WON2: [2, "KEN", 2023]
+  WON3: [2, "KEN", 2024]
+  #WON: [2, "KEN", 2025]
   #WON: [7, "KEN", 2023]
   #WON: [7, "KEN", 2024]
   #WON: [7, "KEN", 2025]
@@ -299,13 +303,22 @@ min_generation_factors:
   #HYD: [50, "ETH", 2022]
   #SPV: [0.1, "ETH", 2022]
   #WON: [2, "ETH", 2022]
-  #HYD: [50, "ETH", 2023]
+  HYD1: [30, "ETH", 2022]
+  HYD2: [30, "ETH", 2023]
+  HYD3: [8, "UGA", 2022]
+  HYD4: [8, "UGA", 2023]
+  HYD5: [8, "UGA", 2024]
+  #HYD6: [8, "UGA", 2025]
+  #HYD2: [14, "UGA", 2023]
   #SPV: [0.1, "ETH", 2022]
   #BIO: [0.08, "ETH", 2022]
   #OIL: [0.5, "UGA", 2023]
   #HYD: [18, "UGA", 2023]
   #BIO: [2, "UGA", 2023]
-  #SPV: [0.4, "UGA", 2020]
+  SPV1: [0.2, "UGA", 2022]
+  SPV2: [0.2, "UGA", 2023]
+  SPV3: [0.2, "UGA", 2024]
+  SPV4: [0.2, "UGA", 2025]
   #OIL: [0.45, "UGA", 2020]
   #HYD: [15, "UGA", 2020]
   #BIO: [1.2, "UGA", 2020]
@@ -320,16 +333,33 @@ max_availability_factors:
 # be used to constrain the maximum output of technologies to, for example, mimic 
 # max generation policy targets.
 # EXAMPLE: - ["IND", 'COA', 2030, 2050, 25]
-  #- ["KEN", 'HYD', 2022, 2025, 10]
+  #- ["KEN", 'HYD', 2022, 2022, 30]
   #- ["KEN", 'HYD', 2022, 2022, 80]
   #- ["KEN", 'OCG', 2025, 2050, 1]
   #- ["KEN", 'CCG', 2015, 2050, 1]
   #- ["KEN", 'OIL', 2025, 2050, 1]
   #- ["TZN", 'OCG', 2026, 2050, 1]
   #- ["TZN", 'CCG', 2020, 2050, 1000]
-  #- ["KEN", 'WON', 2022, 2026, 50]
+  #- ["KEN", 'WON', 2022, 2022, 190]
+  - ["KEN", 'WON', 2022, 2024, 190]
+  - ["KEN", 'HYD', 2022, 2023, 80]
+  - ["KEN", 'HYD', 2023, 2023, 80]
+  #- ["KEN", 'OCG', 2022, 2023, 80]
+  #- ["KEN", 'CCG', 2022, 2023, 80]
+  #- ["KEN", 'WON', 2023, 2023, 190]
+  #- ["KEN", 'WON', 2024, 2024, 190]
+  #- ["KEN", 'WON', 2024, 2024, 190]
+  #- ["KEN", 'WON', 2025, 2025, 190]
+  - ["KEN", 'GEO', 2022, 2025, 60]
+  - ["KEN", 'BIO', 2022, 2025, 15]
   #- ["ETH", 'BIO', 2015, 2050, 5]
-  #- ["UGA", 'BIO', 2015, 2050, 2]
+  - ["UGA", 'GEO', 2022, 2050, 30]
+  - ["ETH", 'HYD', 2022, 2023, 60]
+  - ["UGA", 'HYD', 2022, 2022, 50]
+  - ["UGA", 'HYD', 2023, 2025, 30]
+  - ["UGA", 'SPV', 2022, 2025, 150]
+  - ["UGA", 'OIL', 2022, 2025, 30]
+  
 
 
  
