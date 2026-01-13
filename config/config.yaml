@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEUganda"
+scenario: "BASELINETanzania"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -30,9 +30,9 @@ timeshift: 3 # value between -11 and 12
 # Spatial Parameters 
 geographic_scope:
   #- "KEN"
-  #- "TZA"
+  - "TZA"
   #- "ETH"
-  - "UGA"
+  #- "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -297,7 +297,8 @@ min_generation_factors:
   #OIL: [0.08, "TZA", 2020]
   #OCG: [19, "TZA", 2020]
   #CCG: [.8, "TZA", 2020]
-  #HYD: [8, "TZA", 2020]
+  #HYD9: [3.5, "TZA", 2022]
+  #HYD10: [3.5, "TZA", 2023]
   #SPV: [0.08, "TZA", 2020]
   #BIO: [0.2, "TZA", 2020]
   #HYD: [50, "ETH", 2022]
@@ -305,9 +306,16 @@ min_generation_factors:
   #WON: [2, "ETH", 2022]
   HYD1: [30, "ETH", 2022]
   HYD2: [30, "ETH", 2023]
+  HYD6: [30, "ETH", 2024]
+  HYD7: [30, "ETH", 2025]
+  WON4: [1, "ETH", 2022]
+  WON5: [1, "ETH", 2023]
+  WON6: [1.2, "ETH", 2024]
+  SPV5: [0.1, "ETH", 2022]
   HYD3: [8, "UGA", 2022]
   HYD4: [8, "UGA", 2023]
   HYD5: [8, "UGA", 2024]
+  HYD8: [8, "UGA", 2025]
   #HYD6: [8, "UGA", 2025]
   #HYD2: [14, "UGA", 2023]
   #SPV: [0.1, "ETH", 2022]
@@ -339,7 +347,9 @@ max_availability_factors:
   #- ["KEN", 'CCG', 2015, 2050, 1]
   #- ["KEN", 'OIL', 2025, 2050, 1]
   #- ["TZN", 'OCG', 2026, 2050, 1]
-  #- ["TZN", 'CCG', 2020, 2050, 1000]
+  #- ["TZA", 'CCG', 2022, 2025, 70]
+  #- ["TZA", 'HYD', 2022, 2023, 60]
+  - ["TZA", 'HYD', 2024, 2025, 30]
   #- ["KEN", 'WON', 2022, 2022, 190]
   - ["KEN", 'WON', 2022, 2024, 190]
   - ["KEN", 'HYD', 2022, 2023, 80]
@@ -352,7 +362,10 @@ max_availability_factors:
   #- ["KEN", 'WON', 2025, 2025, 190]
   - ["KEN", 'GEO', 2022, 2025, 60]
   - ["KEN", 'BIO', 2022, 2025, 15]
-  #- ["ETH", 'BIO', 2015, 2050, 5]
+  #- ["ETH", 'BIO', 2022, 2025, 30]
+  - ["ETH", 'WON', 2022, 2025, 150]
+  #- ["ETH", 'OIL', 2022, 2025, 30]
+  #- ["ETH", 'WAS', 2022, 2030, 0]
   - ["UGA", 'GEO', 2022, 2050, 30]
   - ["ETH", 'HYD', 2022, 2023, 60]
   - ["UGA", 'HYD', 2022, 2022, 50]
