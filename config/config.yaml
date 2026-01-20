@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEKenya"
+scenario: "BASELINEEthiopia"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -29,9 +29,9 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
+  #- "KEN"
   #- "TZA"
-  #- "ETH"
+  - "ETH"
   #- "UGA"
 
 # Set to True if transmission should be included
@@ -311,9 +311,36 @@ min_generation_factors:
   HYD2: [30, "ETH", 2023]
   HYD6: [30, "ETH", 2024]
   HYD7: [30, "ETH", 2025]
+  HYD9: [30, "ETH", 2025]
+  HYD10: [30, "ETH", 2026]
+  HYD11: [30, "ETH", 2027]
+  HYD12: [30, "ETH", 2028]
+  HYD13: [30, "ETH", 2029]
+  HYD14: [30, "ETH", 2030]
+  HYD15: [32, "ETH", 2031]
+  HYD16: [32, "ETH", 2032]
+  HYD17: [32, "ETH", 2033]
+  HYD18: [32, "ETH", 2034]
+  HYD19: [32, "ETH", 2035]
+  HYD20: [32, "ETH", 2036]
+  HYD21: [32, "ETH", 2037]
+  HYD22: [32, "ETH", 2038]
+  HYD23: [32, "ETH", 2039]
+  HYD24: [32, "ETH", 2040]
+  HYD25: [33, "ETH", 2041]
+  HYD26: [33, "ETH", 2042]
+  HYD27: [33, "ETH", 2043]
+  HYD28: [33, "ETH", 2044]
+  HYD29: [33, "ETH", 2045]
+  HYD30: [33, "ETH", 2046]
+  HYD31: [33, "ETH", 2047]
+  HYD32: [33, "ETH", 2048]
+  HYD33: [33, "ETH", 2049]
+  HYD34: [33, "ETH", 2050]
   WON4: [1, "ETH", 2022]
   WON5: [1, "ETH", 2023]
   WON6: [1.2, "ETH", 2024]
+  WON7: [1.2, "ETH", 2025]
   SPV5: [0.1, "ETH", 2022]
   HYD3: [8, "UGA", 2022]
   HYD4: [8, "UGA", 2023]
@@ -367,12 +394,15 @@ max_availability_factors:
   #- ["KEN", 'WON', 2025, 2025, 190]
   - ["KEN", 'GEO', 2022, 2025, 60]
   - ["KEN", 'BIO', 2022, 2025, 15]
-  #- ["ETH", 'BIO', 2022, 2025, 30]
+  #- ["ETH", 'WAS', 2022, 2025, 0]
+  - ["ETH", 'BIO', 2022, 2025, 0]
+  #- ["ETH", 'OIL', 2022, 2025, 0]
   - ["ETH", 'WON', 2022, 2025, 150]
   #- ["ETH", 'OIL', 2022, 2025, 30]
   #- ["ETH", 'WAS', 2022, 2030, 0]
   - ["UGA", 'GEO', 2022, 2050, 30]
-  - ["ETH", 'HYD', 2022, 2023, 60]
+  - ["ETH", 'HYD', 2022, 2030, 60]
+  - ["ETH", 'HYD', 2031, 2050, 80]
   - ["UGA", 'HYD', 2022, 2022, 50]
   - ["UGA", 'HYD', 2023, 2025, 30]
   - ["UGA", 'SPV', 2022, 2025, 150]
