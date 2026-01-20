@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEEthiopia"
+scenario: "BASELINEUganda"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -31,8 +31,8 @@ timeshift: 3 # value between -11 and 12
 geographic_scope:
   #- "KEN"
   #- "TZA"
-  - "ETH"
-  #- "UGA"
+  #- "ETH"
+  - "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -346,6 +346,31 @@ min_generation_factors:
   HYD4: [8, "UGA", 2023]
   HYD5: [8, "UGA", 2024]
   HYD8: [8, "UGA", 2025]
+  HYD35: [8, "UGA", 2026]
+  HYD36: [8, "UGA", 2027]
+  HYD37: [8, "UGA", 2028]
+  HYD38: [8, "UGA", 2029]
+  HYD39: [8, "UGA", 2030]
+  HYD40: [8, "UGA", 2031]
+  HYD41: [8, "UGA", 2032]
+  HYD42: [8, "UGA", 2033]
+  HYD43: [8, "UGA", 2034]
+  HYD44: [8, "UGA", 2035]
+  HYD45: [8, "UGA", 2036]
+  HYD46: [8, "UGA", 2037]
+  HYD47: [8, "UGA", 2038]
+  HYD48: [8, "UGA", 2039]
+  HYD49: [8, "UGA", 2040]
+  HYD50: [8, "UGA", 2041]
+  HYD51: [8, "UGA", 2042]
+  HYD52: [8, "UGA", 2043]
+  HYD53: [8, "UGA", 2044]
+  HYD54: [8, "UGA", 2045]
+  HYD55: [8, "UGA", 2046]
+  HYD56: [8, "UGA", 2047]
+  HYD57: [8, "UGA", 2048]
+  HYD58: [8, "UGA", 2049]
+  HYD59: [8, "UGA", 2050]
   #HYD6: [8, "UGA", 2025]
   #HYD2: [14, "UGA", 2023]
   #SPV: [0.1, "ETH", 2022]
@@ -404,7 +429,8 @@ max_availability_factors:
   - ["ETH", 'HYD', 2022, 2030, 60]
   - ["ETH", 'HYD', 2031, 2050, 80]
   - ["UGA", 'HYD', 2022, 2022, 50]
-  - ["UGA", 'HYD', 2023, 2025, 30]
+  - ["UGA", 'HYD', 2023, 2024, 30]
+  - ["UGA", 'HYD', 2025, 2050, 35]
   - ["UGA", 'SPV', 2022, 2025, 150]
   - ["UGA", 'OIL', 2022, 2025, 30]
   
