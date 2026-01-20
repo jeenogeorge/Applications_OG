@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEUganda"
+scenario: "BASELINEKenya"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -29,10 +29,10 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  #- "KEN"
+  - "KEN"
   #- "TZA"
   #- "ETH"
-  - "UGA"
+  #- "UGA"
 
 # Set to True if transmission should be included
 crossborderTrade: True
@@ -263,9 +263,19 @@ min_generation_factors:
   WON1: [3, "KEN", 2022]
   WON2: [3, "KEN", 2023]
   WON3: [2, "KEN", 2024]
+  WON8: [2, "KEN", 2025]
+  WON9: [2, "KEN", 2026]
+  WON10: [2, "KEN", 2027]
+  WON11: [2, "KEN", 2028]
+  WON12: [2, "KEN", 2029]
+  WON13: [2, "KEN", 2030]
   SPV8: [1, "KEN", 2023]
   SPV6: [1, "KEN", 2024]
   SPV7: [1, "KEN", 2025]
+  SPV9: [1, "KEN", 2026]
+  SPV10: [1, "KEN", 2027]
+  SPV11: [1, "KEN", 2028]
+  SPV12: [1, "KEN", 2029]
   #WON: [2, "KEN", 2025]
   #WON: [7, "KEN", 2023]
   #WON: [7, "KEN", 2024]
@@ -409,7 +419,7 @@ max_availability_factors:
   - ["KEN", 'WON', 2022, 2023, 280]
   - ["KEN", 'WON', 2024, 2025, 190]
   - ["KEN", 'HYD', 2022, 2023, 80]
-  - ["KEN", 'HYD', 2023, 2023, 80]
+  - ["KEN", 'HYD', 2023, 2030, 80]
   - ["KEN", 'SPV', 2023, 2023, 150]
   #- ["KEN", 'OCG', 2022, 2023, 80]
   #- ["KEN", 'CCG', 2022, 2023, 80]
