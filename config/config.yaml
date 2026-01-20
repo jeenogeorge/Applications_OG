@@ -1,5 +1,5 @@
 # Scenario Name 
-scenario: "BASELINEKenya"
+scenario: "BASELINETanzania"
 
 
 # for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
@@ -29,8 +29,8 @@ timeshift: 3 # value between -11 and 12
   
 # Spatial Parameters 
 geographic_scope:
-  - "KEN"
-  #- "TZA"
+  #- "KEN"
+  - "TZA"
   #- "ETH"
   #- "UGA"
 
@@ -415,6 +415,7 @@ max_availability_factors:
   #- ["TZA", 'CCG', 2022, 2025, 70]
   #- ["TZA", 'HYD', 2022, 2023, 60]
   - ["TZA", 'HYD', 2024, 2025, 30]
+  - ["TZA", 'HYD', 2026, 2050, 560]
   #- ["KEN", 'WON', 2022, 2022, 190]
   - ["KEN", 'WON', 2022, 2023, 280]
   - ["KEN", 'WON', 2024, 2025, 190]
