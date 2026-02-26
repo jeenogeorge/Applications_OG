@@ -1,7 +1,8 @@
 # Scenario Name 
-scenario: "BASELINE"
+scenario: "BASELINEplannedyes"
 
-# now to run the second scenario - rename the scenario as baselineplannedyes and change transmission_existign and transmission_palnned to true
+# now to run the second scenario -  baselineplannedyes (rename the scenario) and change transmission_planned and transmission_existing to true AND MAKE CHANGES IN CAPACITY TRANSMISION
+
 ## not valid -  for country wise - comment out the other counties  and keep the country that is being modelled eg: ken; make crossborderTrade: False transmission_planned: False and comment out 
 ## not valid -  FOR NUCLEAR - imp - CHNAGE SCENARIO NAME AND IN NO INVEST TECHNOLOGIES - UNCOMMENT URN
 ## not valid -  IN USER DEFINED CAPACITY - UNCOMMENT URN FOR KEN, TZA
@@ -39,11 +40,11 @@ crossborderTrade: True
 
 # Set to True if existing transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
-transmission_existing: False
+transmission_existing: True
 
 # Set to True if planned transmission capacities should be included
 # from the Global Transmission Database (Brinkerink et al., 2024).
-transmission_planned: False
+transmission_planned: True
 
 
 # Set to True if existing storage capacities should be included
@@ -129,16 +130,26 @@ user_defined_capacity_transmission:
 # Per technology, only the capacity, build_year, first_year_of_expansion, 
 # final_year_of_expansion and build_rate_per_year parameters can deviate
 # from each other. For all other parameters only the last entry will be used.
+
+# for baseline - final_year_of_expansion trn1 - 2025, trn2 - 2025, trn3 - 2026, trn6 - 2023, trn9 - 2026, trn7 - 2023, trn8 - 2026; comment out trn4, trn5 
+# for basline - buildrateperyear from trn3 is 0
+# for baselienplannedyes - final_year_of_expansion is 2050 and buildrateperyear from trn3 is 1 (for all unique cases) - extra trn4, trn5 
   #trn1: [TRNTZAXXKENXX, 2, 2025, 2025, 2025, 0, 350, 13, 4, 95]
-  trn1: [TRNKENXXTZAXX, 0, 2022, 2024, 2025, 2, 350, 13, 4, 95]
-  trn2: [TRNTZAXXKENXX, 0, 2022, 2024, 2025, 2, 350, 13, 4, 95]
-  trn3: [TRNETHXXKENXX, 2, 2010, 2026, 2026, 0, 350, 13, 4, 95]
-  #trn4: [TRNKENXXETHXX, .2, 2010, 2025, 2025, 0, 350, 13, 4, 95]
-  #trn5: [TRNUGAXXTZAXX, .2, 2010, 2026, 2050, 0, 350, 13, 4, 95]
-  trn6: [TRNTZAXXUGAXX, .1, 2010, 2023, 2023, 0, 350, 13, 4, 95]
-  trn9: [TRNTZAXXUGAXX, .4, 2024, 2026, 2026, 0, 350, 13, 4, 95]
-  trn7: [TRNKENXXUGAXX, .1, 2010, 2023, 2023, 0, 350, 13, 4, 95]
-  trn8: [TRNKENXXUGAXX, .5, 2024, 2026, 2026, 0, 350, 13, 4, 95]
+  #trn1: [TRNKENXXTZAXX, 0, 2022, 2024, 2025, 2, 350, 13, 4, 95]
+  #trn2: [TRNTZAXXKENXX, 0, 2022, 2024, 2025, 2, 350, 13, 4, 95]
+  #trn3: [TRNETHXXKENXX, 2, 2010, 2026, 2026, 0, 350, 13, 4, 95]
+  #trn4: [TRNKENXXETHXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn5: [TRNUGAXXKENXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn6: [TRNTZAXXUGAXX, .1, 2010, 2023, 2023, 0, 350, 13, 4, 95]
+  #trn9: [TRNTZAXXUGAXX, .4, 2024, 2026, 2026, 0, 350, 13, 4, 95]
+  #trn7: [TRNKENXXUGAXX, .1, 2010, 2023, 2023, 0, 350, 13, 4, 95]
+  #trn8: [TRNKENXXUGAXX, .5, 2024, 2026, 2026, 0, 350, 13, 4, 95]
+  
+  #trn10: [TRNUGAXXTZAXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn11: [TRNETHXXTZAXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn12: [TRNTZAXETHAXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn13: [TRNUGAXETHAXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
+  #trn14: [TRNETHXUGAAXX, 0, 2022, 2026, 2050, 1, 350, 13, 4, 95]
   #trn7: [TRNKENXXUGAXX, .1, 2024, 2025, 2050, 0, 350, 13, 4, 95]
   #trn8: [TRNUGAXXKENXX, .1, 2010, 2026, 2050, 0, 350, 13, 4, 95]
   #trn9: [TRNETHXXUGAXX, 1, 2026, 2026, 2050, 1, 350, 13, 4, 95]
@@ -452,7 +463,7 @@ max_availability_factors:
 # max generation policy targets.
 # EXAMPLE: - ["IND", 'COA', 2030, 2050, 25]
   #- ["KEN", 'HYD', 2022, 2022, 30]
-  - ["KEN", 'HYD', 2022, 2025, 80]
+  #- ["KEN", 'HYD', 2022, 2025, 80]
   #- ["KEN", 'OCG', 2025, 2050, 1]
   #- ["KEN", 'CCG', 2015, 2050, 1]
   #- ["KEN", 'OIL', 2025, 2050, 1]
@@ -460,18 +471,22 @@ max_availability_factors:
   - ["TZA", 'CCG', 2022, 2023, 80]
   - ["TZA", 'CCG', 2024, 2025, 90]
   - ["TZA", 'CCG', 2034, 2050, 20]
+  - ["TZA", 'CCG', 2026, 2033, 10]
+  - ["TZA", 'WON', 2034, 2050, 110]
   #- ["TZA", 'OIL', 2022, 2025, 0]
   - ["TZA", 'SPV', 2022, 2025, 110]
   #- ["TZA", 'HYD', 2022, 2023, 60]
-  #- ["TZA", 'HYD', 2024, 2025, 30]
+  - ["TZA", 'HYD', 2024, 2027, 110]
   #- ["TZA", 'HYD', 2026, 2028, 60]
   #- ["KEN", 'WON', 2022, 2022, 190]
   - ["KEN", 'WON', 2022, 2023, 100]
   - ["KEN", 'WON', 2024, 2025, 290]
+  - ["KEN", 'WON', 2032, 2050, 180]
+  - ["KEN", 'CCG', 2030, 2050, 20]
   - ["KEN", 'HYD', 2022, 2023, 80]
-  - ["KEN", 'HYD', 2025, 2026, 80]
+  #- ["KEN", 'HYD', 2024, 2026, 80]
   - ["KEN", 'OIL', 2022, 2030, 0]
-  #- ["KEN", 'HYD', 2024, 2035, 60]
+  - ["KEN", 'HYD', 2024, 2025, 80]
   - ["KEN", 'SPV', 2022, 2025, 70]
   #- ["KEN", 'OCG', 2022, 2023, 80]
   #- ["KEN", 'CCG', 2022, 2023, 80]
@@ -489,8 +504,10 @@ max_availability_factors:
   - ["ETH", 'BIO', 2022, 2025, 0]
   - ["ETH", 'OIL', 2022, 2025, 0]
   - ["ETH", 'WON', 2022, 2025, 150]
+  - ["ETH", 'CCG', 2026, 2050, 30]
   #- ["ETH", 'OIL', 2022, 2025, 30]
-  #- ["ETH", 'WAS', 2022, 2030, 0]
+  - ["ETH", 'WON', 2026, 2050, 120]
+  - ["ETH", 'SPV', 2026, 2050, 120]
   - ["UGA", 'GEO', 2022, 2050, 30]
   - ["ETH", 'HYD', 2022, 2023, 40]
   - ["ETH", 'HYD', 2024, 2050, 80]
@@ -498,10 +515,14 @@ max_availability_factors:
   #- ["ETH", 'HYD', 2031, 2050, 80]
   - ["UGA", 'HYD', 2022, 2022, 50]
   - ["UGA", 'HYD', 2023, 2025, 30]
+  - ["UGA", 'HYD', 2026, 2044, 30]
+  - ["UGA", 'HYD', 2045, 2050, 30]
   #- ["UGA", 'HYD', 2025, 2050, 35]
   - ["UGA", 'SPV', 2022, 2025, 150]
-  #- ["UGA", 'SPV', 2026, 2050, 150]
-  #- ["UGA", 'WON', 2026, 2050, 150]
+  #- ["UGA", 'SPV', 2026, 2050, 80]
+  - ["UGA", 'CCG', 2026, 2050, 30]
+  - ["UGA", 'SPV', 2026, 2050, 150]
+  - ["UGA", 'WON', 2035, 2050, 110]
   - ["UGA", 'OIL', 2022, 2025, 0]
   
 
